@@ -149,49 +149,7 @@
 </section>
 <!-- =-=-=-=-=-=-= HOME SLIDER END =-=-=-=-=-=-= --> 
 
-    <!-- Menu Section -->
-    <div class="navigation-2"> 
-      <!-- navigation-start -->
-      <nav class="navbar navbar-default ">
-        <div class="container"> 
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-            </button>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-
-          <?php
-            $args = array(
-              'menu_class'      => 'nav navbar-nav',
-              'container'       => 'div', 
-              'container_class' => 'collapse navbar-collapse', 
-              'container_id'    => 'main-navigation',
-              'theme_location'  => 'header_menu',
-              'echo'            => 0,
-            );
-            $menu = wp_nav_menu( $args );
-            $menu = str_replace('class="menu-item', 'class="menu-item dropdown', $menu );
-            $menu = str_replace('class="sub-menu', 'class="sub-menu dropdown-menu', $menu );
-            // $menu = str_replace('class="<a href="', 'class="<a  class="dropdown-toggle" data-toggle="dropdown" href="', $menu );
-            $menu = str_replace('a href="', 'a class="dropdown-toggle" href="', $menu );
-            echo $menu;
-          ?>
-
-          <div class="appoinment-button"><a class="appoinment-button" href="appointment.php">Запись на прием</a></div>
-        </div>
-        <!-- /.container-end --> 
-      </nav>
-    </div>
-  <!-- /.navigation-end --> 
-  <!-- Menu  End --> 
-
-
-
+ 
 
 <!-- =-=-=-=-=-=-= PAGE SECTION =-=-=-=-=-=-= -->
 <div id="page-section"> 

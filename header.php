@@ -99,9 +99,31 @@
               'theme_location'  => 'header_menu',
               'echo'            => 0,
             );
+
+
+            // ниже идет позорный костыль, сделанный мной из-за недостатка знаний по CSS
+            // я осознаю что мне будет стыдно за него в будущем
+            // но сейчас в приоритете скорость разработки
+            // поэтому сорян
             $menu = wp_nav_menu( $args );
-            $menu = str_replace('class="menu-item', 'class="menu-item dropdown', $menu );
-            $menu = str_replace('class="sub-menu', 'class="sub-menu dropdown-menu', $menu );
+            $menu = str_replace('menu-item-has-children', 'menu-item-has-children dropdown', $menu );
+            $menu = str_replace('sub-menu', 'sub-menu dropdown-menu', $menu );
+
+            $pos = 0;
+            $offset = 0;
+
+            do {
+                $pos = strpos($menu, 'menu-item-has-children', $offset);
+                if( $pos ) {
+                  $offset = $pos + 1;
+                  // $substring = substr($menu, $pos);
+                  $link_pos = strpos($menu, '<a href=', $offset);
+                  if( $link_pos ) {
+                    $menu = substr($menu, 0, $link_pos + 3).' class="dropdown-toggle" data-toggle="dropdown" '.substr($menu, $link_pos+3);
+                  }
+                }
+
+            } while ( $pos );
             echo $menu;
           ?>
 
@@ -112,53 +134,6 @@
     </div>
   <!-- /.navigation-end --> 
   <!-- Menu  End --> 
-
-
-
- <!-- Menu Section -->
-    <div class="navigation-2"> 
-      <!-- navigation-start -->
-      <nav class="navbar navbar-default ">
-        <div class="container"> 
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-            </button>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-
-          <div id="main-navigation" class="collapse navbar-collapse">
-            <ul id="menu-%d0%bc%d0%b5%d0%bd%d1%8e-%d0%b2-%d1%88%d0%b0%d0%bf%d0%ba%d0%b5" class="nav navbar-nav">
-              <li id="menu-item-7" class="menu-item dropdown menu-item-type-custom menu-item-object-custom menu-item-7"><a href="http://tochkaopory.localhost/">Главная</a></li>
-              <li id="menu-item-71" class="menu-item dropdown menu-item-type-post_type menu-item-object-page menu-item-71"><a href="http://wp.lavazza-kms.ru/price/">Цены</a></li>
-
-<li class="dropdown"> <a class="dropdown-toggle"  href="#" data-toggle="dropdown">Услуги <span class="fa fa-angle-down"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="hirudotherapy.php">Гирудотерапия</a> </li>
-                  <li><a href="services.php">Услуги</a> </li>
-                  <li><a href="services-2.php">Услуги 2</a> </li>
-                  <li><a href="services-3.php">Услуги 3</a> </li>
-                </ul>
-              </li>
-
-
-<li id="menu-item-28" class="menu-item dropdown menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://wp.lavazza-kms.ru/%d0%be-%d0%bd%d0%b0%d1%81/">О нас</a></li>
-<li id="menu-item-8" class="menu-item dropdown menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="http://wp.lavazza-kms.ru/category/articles/">Статьи</a></li>
-<li id="menu-item-27" class="menu-item dropdown menu-item-type-taxonomy menu-item-object-category menu-item-27"><a href="http://wp.lavazza-kms.ru/category/news/">Новости</a></li>
-<li id="menu-item-68" class="menu-item dropdown menu-item-type-post_type menu-item-object-page menu-item-68"><a href="http://wp.lavazza-kms.ru/contacts/">Контакты</a></li>
-</ul></div>
-          <div class="appoinment-button"><a class="appoinment-button" href="appointment.php">Запись на прием</a></div>
-        </div>
-        <!-- /.container-end --> 
-      </nav>
-    </div>
-  <!-- /.navigation-end --> 
-  <!-- Menu  End --> 
-
 
 </header>
 <!-- =-=-=-=-=-=-= HEADER END =-=-=-=-=-=-= --> 
