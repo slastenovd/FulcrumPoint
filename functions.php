@@ -74,5 +74,34 @@
 	add_action( 'customize_register', 'mytheme_customize_register' );
 
 
+	add_action( 'init', 'create_post_type' );
+	function create_post_type() {
+	  register_post_type( 'myservices',
+	    array(
+	      'labels' => array(
+	        'name' => __( 'Услуги' ),
+	        'singular_name' => __( 'services' ),
+
+			// 'add_new'            => 'Новая услуга', // для добавления новой записи
+	        'add_new_item'       => 'Услуги центра', // заголовка у вновь создаваемой записи в админ-панели.
+			// 'edit_item'          => '', // для редактирования типа записи
+			'new_item'           => 'Новая услуга', // текст новой записи
+			// 'view_item'          => '', // для просмотра записи этого типа.
+			// 'search_items'       => '', // для поиска по этим типам записи
+			// 'not_found'          => '', // если в результате поиска ничего не было найдено
+			// 'not_found_in_trash' => '', // если не было найдено в корзине
+			// 'parent_item_colon'  => '', // для родительских типов. для древовидных типов
+			// 'menu_name'          => '', // название меню
+
+	      ),
+	      'public' => true,
+	      'has_archive' => true,
+	      'menu_position' => 4,
+	      'menu_icon' => 'dashicons-universal-access',
+	      'taxonomies' => array('category','post_tag'),
+	      'supports' => array('title','editor','author','thumbnail','excerpt','comments'),
+	    )
+	  );
+	}
 
 ?>
