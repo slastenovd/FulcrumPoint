@@ -26,7 +26,6 @@
           <!-- post grid -->
           <div class="post-block">
 
-
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <!-- post -->
 
@@ -87,7 +86,6 @@
                       </div>
                     </div>
                   
-                  
                     <div class="related-posts">
                       <div class="related-grid">
                         <img alt="" src="images/blog/related-1.jpg">
@@ -104,14 +102,9 @@
                         </div>
                       </div><!-- Other Post -->
                     </div>
-                  
                 
               </div>
                <!-- post content end -->
-
-
-
-
 
             <?php endwhile; ?>
             <!-- post navigation -->
@@ -120,15 +113,9 @@
             <?php endif; ?>
 
 
-
-
-
-
             </div>
-          <!-- post grid end --> 
-          
-          
 
+          <!-- post grid end --> 
            <div class="clearfix"></div>
            <span class="separator"></span>
            <div id="comments-section">

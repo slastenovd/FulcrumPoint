@@ -83,9 +83,9 @@
               <!--  end col-md-3 --> 
               
               <!-- feature image -->
-              <div class="col-md-4 col-sm-4 col-xs-12 hidden-sm">
+              <div class="col-md-4 col-sm-4 col-xs-12 ">
                 <div class="main-img">
-                 <img alt="" src="http://tochkaopory.localhost/wp-content/uploads/2016/07/medical_doctor1-1.jpg">
+                 <img alt="" src="http://oporycentr.ru/wp-content/uploads/2016/07/1234443.png">
 
                 </div>
                 <!-- end features-services-img --> 

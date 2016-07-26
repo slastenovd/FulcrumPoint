@@ -101,11 +101,13 @@
             );
 
 
+            $menu = wp_nav_menu( $args );
+
             // ниже идет позорный костыль, сделанный мной из-за недостатка знаний по CSS
             // я осознаю что мне будет стыдно за него в будущем
             // но сейчас в приоритете скорость разработки
             // поэтому сорян
-            $menu = wp_nav_menu( $args );
+            // ----- начало костыля ----- //
             $menu = str_replace('menu-item-has-children', 'menu-item-has-children dropdown', $menu );
             $menu = str_replace('sub-menu', 'sub-menu dropdown-menu', $menu );
 
@@ -116,14 +118,21 @@
                 $pos = strpos($menu, 'menu-item-has-children', $offset);
                 if( $pos ) {
                   $offset = $pos + 1;
-                  // $substring = substr($menu, $pos);
                   $link_pos = strpos($menu, '<a href=', $offset);
+                  // Добавляем классы в меню с children
                   if( $link_pos ) {
                     $menu = substr($menu, 0, $link_pos + 3).' class="dropdown-toggle" data-toggle="dropdown" '.substr($menu, $link_pos+3);
+                    $link_end_pos = strpos($menu, '</a>', $offset);
+                    // Добавляем стрелочку вниз справа от drop-down пункта меню
+                    if( $link_end_pos ) {
+                        $menu = substr($menu, 0, $link_end_pos).' <span class="fa fa-angle-down"></span>'.substr($menu, $link_end_pos);
+                    }
                   }
                 }
 
             } while ( $pos );
+            // ----- конец костыля ----- //
+
             echo $menu;
           ?>
 
