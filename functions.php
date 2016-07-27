@@ -76,7 +76,7 @@
 
 	add_action( 'init', 'create_post_type' );
 	function create_post_type() {
-	  register_post_type( 'myservices',
+	  register_post_type( 'services',
 	    array(
 	      'labels' => array(
 	        'name' => __( 'Услуги' ),
@@ -98,7 +98,7 @@
 	      'has_archive' => true,
 	      'menu_position' => 4,
 	      'menu_icon' => 'dashicons-universal-access',
-	      'taxonomies' => array('category','post_tag'),
+	      'taxonomies' => array('post_tag'),
 	      'supports' => array('title','editor','author','thumbnail','excerpt','comments'),
 	    )
 	  );
