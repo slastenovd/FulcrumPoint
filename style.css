@@ -1,6 +1,6 @@
 /*   
-Theme Name: TochkaOpory
-Theme URI: TochkaOpory.ru
+Theme Name: FulcrumPoint
+Theme URI: FulcrumPoint.ru
 Description: Тема для частной медицинской организации
 Author: Дмитрий Сластенов
 Author URI: slastenov.net
@@ -369,7 +369,7 @@ p {
 	background: #8cbc15;
 }
 .navbar-default {
-	border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+	border-top: 0px solid rgba(0, 0, 0, 0.05) !important;
 }
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: 0;
@@ -622,7 +622,7 @@ p {
 	position: relative;
 	left: 0px;
 	top: 0px;
-	background: rgba(255, 255, 255, 0) url("../TochkaOpory/images/grey-balls.png") 100% 100% no-repeat;
+	background: rgba(255, 255, 255, 0) url("../FulcrumPoint/images/grey-balls.png") 100% 100% no-repeat;
     
     background-size: cover; /* Масштабируем фон */
 
@@ -1050,7 +1050,7 @@ p {
 	width: 100%;
 }
 .testimonial-bg {
-	background: rgba(0, 0, 0, 0) url("../TochkaOpory/images/testimonial.jpg") repeat scroll center top;
+	background: rgba(0, 0, 0, 0) url("../FulcrumPoint/images/testimonial.jpg") repeat scroll center top;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1064,13 +1064,13 @@ p {
 	-o-background-size: cover;
 }
 #working-hours {
-	background: rgba(0, 0, 0, 0) url("../TochkaOpory/images/working-hours.jpg") no-repeat scroll center top;
+	background: rgba(0, 0, 0, 0) url("../FulcrumPoint/images/working-hours.jpg") no-repeat scroll center top;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 }
 .breadcrumb-image {
-	background: rgba(0, 0, 0, 0) url(../TochkaOpory/images/about-us.jpg);
+	background: rgba(0, 0, 0, 0) url(../FulcrumPoint/images/about-us.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-repeat: no-repeat;
@@ -1080,7 +1080,7 @@ p {
 }
 
 #about {
-	background: url("../TochkaOpory/images/parallex-4.jpg") no-repeat;
+	background: url("../FulcrumPoint/images/parallex-4.jpg") no-repeat;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -2028,7 +2028,7 @@ img.mfp-img {
 	color: #8cbc15;
 }
 .project-overview {
-	padding-top: 90px;
+	padding-top: 40px;
 }
 .single-project-section.alter .project-overview {
 	padding: 0;
@@ -2042,6 +2042,7 @@ img.mfp-img {
 }
 .project-overview p {
 	margin-bottom: 25px;
+	text-align: justify;
 }
 .quick-overview .btn {
 	margin-top: 20px;
@@ -2077,7 +2078,7 @@ img.mfp-img {
 	margin-top: 30px;
 }
 .single-project-section.alter .project-overview {
-	padding-bottom: 90px;
+	padding-bottom: 40px;
 }
 }
 /* =-=-=-=-=-=-= Accordion  =-=-=-=-=-=-= */
@@ -3198,7 +3199,7 @@ footer h4 {
 	cursor: pointer;
 }
 .inner-footer .contact {
-	background: rgba(0, 0, 0, 0) url("../TochkaOpory/images/footer-map.png") no-repeat scroll center center;
+	background: rgba(0, 0, 0, 0) url("../FulcrumPoint/images/footer-map.png") no-repeat scroll center center;
 }
 .inner-footer .contact ul {
 	margin: 0;

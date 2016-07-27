@@ -21,37 +21,61 @@
   <!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
   <section class="section-padding">
             <div class="container">
-                <div class="zoom-pic" align="center">
-                    <a href="<?php the_permalink(); ?>"> <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?></a>
-                </div>
+
+                  <div class="zoom-pic" align="center">
+                       <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?>
+                  </div>
+
+                  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                    <div class="project-overview">
+                        <div class="row">
+                            <div class="col-md-12" >
+                                <div class="section-title" > <strong><?php the_title(); ?></strong></div>
+                                  <?php the_content(); ?>
 
 
+                              </div>
+                          </div><!-- /.row -->
+                      </div><!-- /.project-overview -->
 
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                  <?php endwhile; ?>
+                  <!-- post navigation -->
+                  <?php else: ?>
+                  <!-- no posts found -->
+                  <?php endif; ?>                
 
-                <div class="project-overview">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title"> <strong><?php the_title(); ?></strong></div>
-                            
+                  <?php 
+                    // Find tags of current service post
+                    $posttags = get_the_tags();
+                    $stringtags = '';
+                    if ($posttags) {
+                      foreach($posttags as $tag) {
+                        $stringtags .= $tag->name . ', '; 
+                      }
+                    }
 
-                            <p><?php the_content(); ?></p>
+                    // Get articles with same tags
+                    $args = array(
+                        'category_name' => 'articles',
+                        'tag' => $stringtags,
+                    );
+                    $posts = get_posts($args);
 
-                            
+                    if( count($posts) ){
+                      $post = $posts[0];
+                      setup_postdata($post);
+                      if ($post->ID <> $real_id){
+                    ?>
 
-                        </div>
-
-                                       
-
-
-                    </div><!-- /.row -->
-                </div><!-- /.project-overview -->
-
-                <?php endwhile; ?>
-                <!-- post navigation -->
-                <?php else: ?>
-                <!-- no posts found -->
-                <?php endif; ?>                
+                      <div class="read-more"> <a class="btn btn-blog btn-default" href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i>Подробнее</a> </div>
+                
+                   <?php
+                      }
+                    }
+                  
+                  wp_reset_postdata();
+                  ?>                                  
 
             </div><!-- /.container -->
         </section>
@@ -70,10 +94,9 @@
           <div class="row">
             <div class="team-members padding-top-30"> 
 
-
-
             <?php 
               // Find tags of current service post
+/*
               $posttags = get_the_tags();
               $stringtags = '';
               if ($posttags) {
@@ -81,7 +104,7 @@
                   $stringtags .= $tag->name . ', '; 
                 }
               }
-
+*/
               // Get team members with same tags
               $args = array(
                   'category_name' => 'personal',
