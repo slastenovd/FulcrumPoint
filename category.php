@@ -22,14 +22,13 @@
       <div class="row">
         <div class="blog-grid padding-top-30"> 
 
-  
-		  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  		  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		  <!-- post -->
 
 		          <!-- Blog Grid -->
 		         <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6 blog-post">
 		          
-		            <div class="blog-container"> <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?>
+		            <div class="blog-container" > <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?>
 		              <div class="blog-overlay-down">
 		                <div class="blog-title">
 		                  <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h4>

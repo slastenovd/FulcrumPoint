@@ -17,7 +17,7 @@
     </div>
   </section>
   <!-- =-=-=-=-=-=-= PAGE HEADING SECTION END =-=-=-=-=-=-= --> 
-  
+
   <!-- =-=-=-=-=-=-= BLOG & NEWS =-=-=-=-=-=-= -->
   <section class="section-padding" id="blog">
     <div class="container">

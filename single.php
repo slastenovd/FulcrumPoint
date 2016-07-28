@@ -31,7 +31,7 @@
 
               <!-- image grid -->
               <!-- <div class="post-image zoom-pic"> -->
-              <div class="zoom-pic">
+              <div class="zoom-pic" align="center" >
                   <a href="<?php the_permalink(); ?>"> <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?></a>
               </div><!-- image grid end -->
               <!-- post content -->

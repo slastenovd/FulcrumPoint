@@ -22,21 +22,30 @@
   <section class="section-padding">
             <div class="container">
 
-                  <div class="zoom-pic" align="center">
-                       <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?>
+                  <div class="zoom-pic blog-container" align="center">
+                       <?php  the_post_thumbnail( 'banner-tumbnail', 'img-post_thumbnail' );  ?>
                   </div>
 
                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                     <div class="project-overview">
                         <div class="row">
-                            <div class="col-md-12" >
-                                <div class="section-title" > <strong><?php the_title(); ?></strong></div>
+                          <div class="section-title col-md-8" > <strong><?php the_title(); ?></strong></div>
+                            <div class="col-md-8" >
+                                
                                   <?php the_content(); ?>
+                            </div>
 
+                            <div class="col-md-4 quick-overview">
+                                <ul class="portfolio-meta">
+                                    <li><span> Первичная консультация </span> 1000 p.</li>
+                                    <li><span> Повторная консультация </span> 800 p.</li>
+                                    <li><span> Врачей по специальности </span> 3</li>
+                                    <li><span> Поделиться </span> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
 
-                              </div>
-                          </div><!-- /.row -->
+                        </div><!-- /.row -->
                       </div><!-- /.project-overview -->
 
                   <?php endwhile; ?>
@@ -68,12 +77,11 @@
                       if ($post->ID <> $real_id){
                     ?>
 
-                      <div class="read-more"> <a class="btn btn-blog btn-default" href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i>Подробнее</a> </div>
-                
+                      <div class="read-more"> <a class="btn btn-primary" href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i> Подробнее</a> </div>
+
                    <?php
                       }
                     }
-                  
                   wp_reset_postdata();
                   ?>                                  
 
@@ -95,16 +103,6 @@
             <div class="team-members padding-top-30"> 
 
             <?php 
-              // Find tags of current service post
-/*
-              $posttags = get_the_tags();
-              $stringtags = '';
-              if ($posttags) {
-                foreach($posttags as $tag) {
-                  $stringtags .= $tag->name . ', '; 
-                }
-              }
-*/
               // Get team members with same tags
               $args = array(
                   'category_name' => 'personal',

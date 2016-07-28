@@ -1,8 +1,5 @@
 <?php
 
-	// Подключение миниатюр
-	add_theme_support( 'post-thumbnails' );
-
 	// Задаем длинну отрывка в топике блога
 	function new_excerpt_length($length) {
 		return 15;
@@ -25,9 +22,6 @@
 	}
 	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
-	register_nav_menus(array(	'header_menu'=>'Меню в шапке', 
-								'footer_menu'=>'Меню внизу' )
-							);
 
 	function mytheme_customize_register( $wp_customize ) {
 		/* 	Добавляем секцию в настройки темы */
@@ -103,5 +97,21 @@
 	    )
 	  );
 	}
+
+
+	function learningWordPress_setup(){
+		// Подключение миниатюр
+		add_theme_support( 'post-thumbnails' );
+		 add_image_size( 'small-tumbnail', 180, 120, array('left','top') );
+		 add_image_size( 'banner-tumbnail', 750, 200, array('left','top') );
+
+		register_nav_menus(array(	'header_menu'=>'Меню в шапке', 
+									'footer_menu'=>'Меню внизу' )
+								);
+
+		add_theme_support( 'post-formats', array('gallery') ); // ,'aside','link'
+	}
+
+	add_action( 'after_setup_theme', 'learningWordPress_setup' );
 
 ?>
