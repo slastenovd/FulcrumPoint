@@ -10,7 +10,7 @@
         <div class="col-lg-12">
           <div class="page-heading_content text-center">
             <h1><span><?php the_title(); ?></span></h1>
-            <div class="bredcrumbs"> <a href="<?php  bloginfo("url") ?>">Главная</a> <span>/</span> <a href="#"><?php the_title(); ?></a> </div>
+            <div class="bredcrumbs"> <a href="<?php  bloginfo("url") ?>">Главная</a> <span>/</span> <a href='#'>Услуги</a> <span>/</span> <a href="#"><?php the_title(); ?></a> </div>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
 
                     <div class="project-overview">
                         <div class="row">
-                          <div class="section-title col-md-8" > <strong><?php the_title(); ?></strong></div>
+                          
                             <div class="col-md-8" >
                                 
                                   <?php the_content(); ?>
@@ -74,13 +74,9 @@
                     if( count($posts) ){
                       $post = $posts[0];
                       setup_postdata($post);
-                      if ($post->ID <> $real_id){
                     ?>
-
                       <div class="read-more"> <a class="btn btn-primary" href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i> Подробнее</a> </div>
-
-                   <?php
-                      }
+                    <?php
                     }
                   wp_reset_postdata();
                   ?>                                  
@@ -112,7 +108,6 @@
 
               foreach( $posts as $post ){
                 setup_postdata($post);
-                if ($post->ID <> $real_id){
               ?>
              
 
@@ -139,7 +134,6 @@
                   <!-- Team-Grid End --> 
 
                <?php
-                }
               }
               wp_reset_postdata();
               ?>

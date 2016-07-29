@@ -3269,7 +3269,7 @@ footer h4 {
 	top: 0;
 	width: 100%;
 }
-.sub-footer p {
+.sub-footer p a {
 	color: #8f8f8f;
 }
 .footer-menu ul {
@@ -3864,3 +3864,65 @@ gin-bottom:0;
 	width: 100%;
 	height: auto;
 }
+
+.inner-footer .search form {
+	position: relative;
+}
+.inner-footer .search input.form-control {
+	background: transparent none repeat scroll 0 0;
+	border-color: #474545;
+	color: #ccc;
+}
+.inner-footer .search form .btn {
+	background: #3c3c3c none repeat scroll 0 0;
+	border: 1px solid #3c3c3c;
+	color: #909090;
+	float: right;
+	font-size: 18px;
+	height: 52px;
+	position: relative;
+	text-align: center;
+	width: 60px;
+}
+.inner-footer .search  form .btn:hover {
+	background: #8cbc15 none repeat scroll 0 0;
+	border: 1px solid #8cbc15;
+}
+
+.inner-footer .widget{
+	margin-bottom: 30px;
+}
+
+.inner-footer .widget ul {
+	margin: 0;
+	padding: 0;
+}
+
+.inner-footer .widget ul li{
+	margin-bottom: 10px;
+}
+
+.inner-footer .widget ul li a {
+	color: #8f8f8f;
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+	list-style: outside none none;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+.inner-footer .widget ul li a:hover, .inner-footer .widget ul li span:hover{
+	color: #8cbc15;
+	cursor: pointer;
+}
+
+.inner-footer .widget ul li span{
+    color: #838383;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+	
+}
+

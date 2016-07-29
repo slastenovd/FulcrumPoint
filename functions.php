@@ -103,7 +103,7 @@
 		// Подключение миниатюр
 		add_theme_support( 'post-thumbnails' );
 		 add_image_size( 'small-tumbnail', 180, 120, array('left','top') );
-		 add_image_size( 'banner-tumbnail', 750, 200, array('left','top') );
+		 add_image_size( 'banner-tumbnail', 750, 200, array('left','center') );
 
 		register_nav_menus(array(	'header_menu'=>'Меню в шапке', 
 									'footer_menu'=>'Меню внизу' )
@@ -113,5 +113,54 @@
 	}
 
 	add_action( 'after_setup_theme', 'learningWordPress_setup' );
+
+
+	/**
+	 * Register widget area.
+	 *
+	 */
+	function FulcrumPoint_widgets_init() {
+		register_sidebar( array(
+			'name'          => esc_html__( 'Sidebar', 'FulcrumPoint' ),
+			'id'            => 'sidebar-1',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			// 'description'   => esc_html__( 'Add widgets here.', 'FulcrumPoint' ),
+			// 'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			// 'after_widget'  => '</section>',
+			// 'before_title'  => '<h2 class="widget-title">',
+			// 'after_title'   => '</h2>',
+		) );
+
+		register_sidebar( array(
+			'name'          => 'Footer Area 1',
+			'id'            => 'footer-1',
+			'before_widget' => '<div id="%1$s" class="col-md-3 widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
+		) );
+
+		register_sidebar( array(
+			'name'          => 'Footer Area 2',
+			'id'            => 'footer-2',
+			'before_widget' => '<div id="%1$s" class="col-md-3 widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
+		) );
+
+
+		register_sidebar( array(
+			'name'          => 'Footer Area 4',
+			'id'            => 'footer-4',
+			'before_widget' => '<div id="%1$s" class="col-md-3 widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
+		) );
+
+	}
+	add_action( 'widgets_init', 'FulcrumPoint_widgets_init' );	
 
 ?>
