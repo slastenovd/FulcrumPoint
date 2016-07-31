@@ -272,12 +272,12 @@
           </div>
           <!-- /.recent-project --> 
         </li>
-        <li class="portfolio-item" data-groups='["all", "interface"]'>
+        <li class="portfolio-item" data-groups='["all", "identety", "web"]'>
           <div class="portfolio">
             <div class="tt-overlay"></div>
             <img src="<?php bloginfo("template_url") ?>/images/portfolio/3.jpg" alt="">
             <div class="portfolio-info">
-              <h3 class="project-title">Прессотерапия<h3>
+              <h3 class="project-title">Рефлексотерапия</h3>
               <a href="#" class="links">App Design</a> </div>
             <!-- /.project-info -->
             
