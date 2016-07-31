@@ -135,7 +135,7 @@
             echo $menu;
           ?>
 
-          <div class="appoinment-button"><a class="appoinment-button" href="appointment.php">Запись на прием</a></div>
+          <div class="appoinment-button"><a class="appoinment-button page-scroll" href="#appoinment">Запись на прием</a></div>
         </div>
         <!-- /.container-end --> 
       </nav>

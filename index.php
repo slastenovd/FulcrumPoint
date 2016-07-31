@@ -200,7 +200,7 @@
         </div>
         <!-- end col-md-6 -->
         
-        <div class="col-md-5 col-md-pull-7"> <img src="<?php bloginfo("template_url") ?>/images/about-1.png"  alt=""> </div>
+        <div class="col-md-5 col-md-pull-7"> <img src="<?php bloginfo("template_url") ?>/images/about-1.jpg"  alt=""> </div>
         <!-- end col-md-5 --> 
         
       </div>
@@ -245,7 +245,7 @@
             <div class="tt-overlay"></div>
             <img src="<?php bloginfo("template_url") ?>/images/portfolio/1.jpg" alt="">
             <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
+              <h3 class="project-title">Кабинет неврологии</h3>
               <a href="#" class="links">App Design</a> </div>
             <!-- /.project-info -->
             
@@ -261,7 +261,7 @@
             <div class="tt-overlay"></div>
             <img src="<?php bloginfo("template_url") ?>/images/portfolio/2.jpg" alt="">
             <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
+              <h3 class="project-title">Рефлексотерапия</h3>
               <a href="#" class="links">App Design</a> </div>
             <!-- /.project-info -->
             
@@ -277,7 +277,7 @@
             <div class="tt-overlay"></div>
             <img src="<?php bloginfo("template_url") ?>/images/portfolio/3.jpg" alt="">
             <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
+              <h3 class="project-title">Прессотерапия<h3>
               <a href="#" class="links">App Design</a> </div>
             <!-- /.project-info -->
             
@@ -488,84 +488,71 @@
     </div>
   </section>
   <!-- =-=-=-=-=-=-= APPOINMENT SECTION  END =-=-=-=-=-=-= --> 
-  
+
 <!-- =-=-=-=-=-=-= OUR TEAM =-=-=-=-=-=-= -->
-  <section class="section-padding" id="team">
-    <div >
-      <div class="container">
-        <div class="section-title"> <strong>НАШ ПЕРСОНАЛ </strong>
-          <h1 class="heading bold">THE ASSETS OF OUR FAMILY</h1>
-          <hr>
-          <p> Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit.
-            Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit. </p>
-        </div>
-        <!-- End title-section -->
-        <div class="row">
-          <div class="team-members padding-top-30"> 
-            <!-- Team-Grid -->
-            <div class="col-xs-12 col-md-4 col-sm-6 team-grid">
-              <div class="team-img-container">
-                <div class="team-overlay"> <a href="#"><i class="fa fa-link"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                <img class="img-responsive" alt="" src="<?php bloginfo("template_url") ?>/images/team/1.png">
-                <div class="team-overlay-down">
-                  <div class="team-title">
-                    <h4>Kettie Doe</h4>
-                    <p> <a href="#">Hairdresser</a> </p>
-                  </div>
-                </div>
-              </div>
-              <div class="team-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tenetur velit exercitationem. Voluptates, esse pariatur debitis repellendus nulla, labore perspiciatis.</p>
-              </div>
-            </div>
-            <!-- Team-Grid End --> 
-            
-            <!-- Team-Grid -->
-            <div class="col-xs-12 col-md-4 col-sm-6 team-grid">
-              <div class="team-img-container">
-                <div class="team-overlay"> <a href="#"><i class="fa fa-link"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                <img class="img-responsive" alt="" src="<?php bloginfo("template_url") ?>/images/team/2.png">
-                <div class="team-overlay-down">
-                  <div class="team-title">
-                    <h4>David Smith</h4>
-                    <p> <a href="#">Barber Stylist</a> </p>
-                  </div>
-                </div>
-              </div>
-              <div class="team-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tenetur velit exercitationem. Voluptates, esse pariatur debitis repellendus nulla, labore perspiciatis.</p>
-              </div>
-            </div>
-            <!-- Team-Grid End --> 
-            
-            <!-- Team-Grid -->
-            <div class="col-xs-12 col-md-4 col-sm-6 team-grid">
-              <div class="team-img-container">
-                <div class="team-overlay"> <a href="#"><i class="fa fa-link"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                <img class="img-responsive" alt="" src="<?php bloginfo("template_url") ?>/images/team/3.png">
-                <div class="team-overlay-down">
-                  <div class="team-title">
-                    <h4>Backy John</h4>
-                    <p> <a href="#">Hairdresser</a> </p>
-                  </div>
-                </div>
-              </div>
-              <div class="team-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tenetur velit exercitationem. Voluptates, esse pariatur debitis repellendus nulla, labore perspiciatis.</p>
-              </div>
-            </div>
-            <!-- Team-Grid End --> 
-            
+    <section class="" id="team">
+      <div >
+        <div class="container">
+          <div class="section-title"> <strong>Наш персонал</strong>
+            <h1 class="heading bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, minima!</h1>
+            <hr>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut neque possimus quasi labore, earum quis eaque nisi, totam, voluptatibus maiores nobis ex!  </p>
           </div>
+          <!-- End title-section -->
+          <div class="row">
+            <div class="team-members padding-top-30"> 
+
+            <?php 
+              // Get team members with same tags
+              $args = array(
+                  'category_name' => 'personal',
+                  // 'tag' => $stringtags,
+              );
+              $posts = get_posts($args);
+
+              foreach( $posts as $post ){
+                setup_postdata($post);
+              ?>
+             
+
+                  <!-- Team-Grid -->
+                  <div class="col-xs-12 col-md-4 col-sm-6 team-grid">
+                    <div class="team-img-container">
+                      <div class="team-overlay"> <a href="#"><i class="fa fa-link"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                      <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?>
+                      <div class="team-overlay-down">
+                        <div class="team-title">
+                          <a href="<?php the_permalink(); ?>">
+                            <h4><?php the_title(); ?></h4>
+                            <p> <?php echo get_post_meta($post->ID, 'Должность', true); ?> </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team-description">
+                        <a href="<?php the_permalink(); ?>">
+                          <p><?php echo substr( get_the_content() , 0, 150).'[...]'; ?></p>
+                        </a>
+                    </div>
+                  </div>
+                  <!-- Team-Grid End --> 
+
+               <?php
+              }
+              wp_reset_postdata();
+              ?>
+              
+            </div>
+          </div>
+          <!-- End team-members --> 
+          
         </div>
-        <!-- End team-members --> 
-        
+        <!-- end container --> 
       </div>
-      <!-- end container --> 
-    </div>
-    <!-- end team-section --> 
-  </section>
-  <!-- =-=-=-=-=-=-= OUR TEAM END =-=-=-=-=-=-= -->
+      <!-- end team-section --> 
+    </section>
+      <!-- =-=-=-=-=-=-= OUR TEAM END =-=-=-=-=-=-= -->
+
   
   <!-- =-=-=-=-=-=-= OPENING HOURS SECTION =-=-=-=-=-=-= -->
   <section class="section-padding parallex" id="working-hours" data-stellar-background-ratio="0.1">
@@ -625,93 +612,65 @@
   </section>
   <!-- =-=-=-=-=-=-= OPENING HOURS SECTION  END =-=-=-=-=-=-= --> 
   
-  
-  <!-- =-=-=-=-=-=-= BLOG & NEWS =-=-=-=-=-=-= -->
+   <!-- =-=-=-=-=-=-= BLOG & NEWS =-=-=-=-=-=-= -->
   <section class="section-padding" id="blog">
     <div class="container">
+
       <div class="section-title"> <strong>НОВОСТИ & СТАТЬИ </strong>
         <h1 class="heading bold">СВЕЖИЕ ЗАПИСИ</h1>
         <hr>
         <p> Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit.
           Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit. </p>
       </div>
+
+      
       <div class="row">
         <div class="blog-grid padding-top-30"> 
-          <!-- Blog Grid -->
-          <div class="col-sm-6 blog-post">
-            <div class="blog-container"> <img class="img-responsive" alt="" src="<?php bloginfo("template_url") ?>/images/blog/1.jpg">
-              <div class="team-overlay-down">
-                <div class="blog-title">
-                  <h4>A LOOK INSIDE THE Workspace </h4>
-                  <div class="blog-content-meta">  <i class="fa fa-sitemap"></i> <a href="#"> Category</a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 5 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> JAN 24, 2016</a> &nbsp; </div>
+
+                <?php 
+              // Get team members with same tags
+              $args = array(
+                  'category_name' => 'articles',
+                  // 'tag' => $stringtags,
+              );
+              $posts = get_posts($args);
+
+              foreach( $posts as $post ){
+                setup_postdata($post);
+              ?>
+
+              <!-- Blog Grid -->
+             <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6 blog-post">
+              
+                <div class="blog-container" > <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?>
+                  <div class="blog-overlay-down">
+                    <div class="blog-title">
+                      <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h4>
+                      <div class="blog-content-meta hidden-sm">  <a href="#"> <?php the_tags(' <i class="fa fa-sitemap"></i><span>Теги:</span>'); ?></a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 5 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> <?php the_date('d.m.Y'); ?></a> &nbsp; </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-description">
+                  <p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+                  <div class="read-more"> <a class="btn btn-blog btn-default" href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i> Читать</a> </div>
                 </div>
               </div>
-            </div>
-            <div class="blog-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tenetur velit exercitationem. Voluptates, esse pariatur debitis repellendus nulla, labore perspiciatis.</p>
-              <div class="read-more"> <a class="btn btn-blog btn-default" href="#"><i class="fa fa-plus"></i> Read More</a> </div>
-            </div>
-          </div>
-          <!-- Blog Grid End --> 
-          
-          <!-- Blog Grid -->
-          <div class="col-sm-6 blog-post">
-            <div class="blog-container"> <img class="img-responsive" alt="" src="<?php bloginfo("template_url") ?>/images/blog/2.jpg">
-              <div class="team-overlay-down">
-                <div class="blog-title">
-                  <h4>A LOOK INSIDE THE Workspace </h4>
-                  <div class="blog-content-meta"> <i class="fa fa-sitemap"></i> <a href="#"> Category</a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 5 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> JAN 24, 2016</a> &nbsp; </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tenetur velit exercitationem. Voluptates, esse pariatur debitis repellendus nulla, labore perspiciatis.</p>
-              <div class="read-more"> <a class="btn btn-blog btn-default" href="#"><i class="fa fa-plus"></i> Read More</a> </div>
-            </div>
-          </div>
-          <!-- Blog Grid End --> 
-          
-          <!-- Blog Grid -->
-          <div class="col-sm-6 blog-post">
-            <div class="blog-container"> <img class="img-responsive" alt="" src="<?php bloginfo("template_url") ?>/images/blog/3.jpg">
-              <div class="team-overlay-down">
-                <div class="blog-title">
-                  <h4>A LOOK INSIDE THE Workspace </h4>
-                  <div class="blog-content-meta"> <i class="fa fa-sitemap"></i> <a href="#"> Category</a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 5 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> JAN 24, 2016</a> &nbsp; </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tenetur velit exercitationem. Voluptates, esse pariatur debitis repellendus nulla, labore perspiciatis.</p>
-              <div class="read-more"> <a class="btn btn-blog btn-default" href="#"><i class="fa fa-plus"></i> Read More</a> </div>
-            </div>
-          </div>
-          <!-- Blog Grid End --> 
-          
-          <!-- Blog Grid -->
-          <div class="col-sm-6 blog-post">
-            <div class="blog-container"> <img class="img-responsive" alt="" src="<?php bloginfo("template_url") ?>/images/blog/4.jpg">
-              <div class="team-overlay-down">
-                <div class="blog-title">
-                  <h4>A LOOK INSIDE THE Workspace </h4>
-                  <div class="blog-content-meta">  <i class="fa fa-sitemap"></i> <a href="#"> Category</a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 5 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> JAN 24, 2016</a> &nbsp; </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tenetur velit exercitationem. Voluptates, esse pariatur debitis repellendus nulla, labore perspiciatis.</p>
-              <div class="read-more"> <a class="btn btn-blog btn-default" href="#"><i class="fa fa-plus"></i> Read More</a> </div>
-            </div>
-          </div>
-          <!-- Blog Grid End -->
-          <div class="clearfix"></div>
-          <div class="align-center  view-more"> <a href="#" class="btn btn-blog btn-default"><i class="fa fa-plus"></i> See More Post</a> </div>
+              <!-- Blog Grid End --> 
+
+                     <?php
+              }
+              wp_reset_postdata();
+              ?>
+     
         </div>
       </div>
       <!-- End row --> 
     </div>
   </section>
-  <!-- =-=-=-=-=-=-= BLOG & NEWS  END =-=-=-=-=-=-= --> 
+  <!-- =-=-=-=-=-=-= BLOG & NEWS  END =-=-=-=-=-=-= -->
+
+
+
   <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS =-=-=-=-=-=-= -->
   <section  data-stellar-background-ratio="0" class="testimonial-bg parallex section-padding-140 text-center">
     <div class="container">
