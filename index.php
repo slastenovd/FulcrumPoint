@@ -606,8 +606,9 @@
                 <?php 
               // Get team members with same tags
               $args = array(
-                  'category_name' => 'articles',
-                  // 'tag' => $stringtags,
+                  'category_name' => 'articles, news',
+                  'posts_per_page'   => 4,
+          
               );
               $posts = get_posts($args);
 
@@ -637,7 +638,8 @@
               }
               wp_reset_postdata();
               ?>
-     
+              <div class="clearfix"></div>
+              <div class="align-center  view-more"> <a href="category/news/" class="btn btn-blog btn-default"><i class="fa fa-plus"></i> Перейти к новостям</a> </div>     
         </div>
       </div>
       <!-- End row --> 
