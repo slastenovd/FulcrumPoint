@@ -1057,7 +1057,7 @@ p {
 	-o-background-size: cover;
 }
 .quote-bg {
-	background: url("../images/parallex-2.jpg") no-repeat scroll center top;
+	background: url("../FulcrumPoint/images/parallex-2.jpg") no-repeat scroll center top;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1088,7 +1088,8 @@ p {
 
 .parallex-small {
 	color: #fff;
-	background: #8cbc15;
+		background: rgba(140, 188, 21, 0.8) none repeat scroll 0 0;
+	/*background: #8cbc15;*/
 }
 .parallex-text h4 {
 	margin-bottom: 0;

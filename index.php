@@ -209,32 +209,22 @@
     <!-- end container --> 
   </section>
   <!-- =-=-=-=-=-=-= ABOUT US END =-=-=-=-=-=-= --> 
-  
-  <!-- =-=-=-=-=-=-= SEPARATOR =-=-=-=-=-=-= -->
-  <div class="parallex-small section-padding-70">
+    <!-- =-=-=-=-=-=-= PARALLEX =-=-=-=-=-=-= -->
+  <section data-stellar-background-ratio="0" class="parallex quote-bg section-padding text-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <div class="parallex-text">
-            <h4>ЗАИНТЕРЕСОВАЛИСЬ ? </h4>
-            <p>Запишитесь на прием к интересуюшему Вас специалисту. </p>
-          </div>
-          <!-- end subsection-text --> 
-        </div>
-        <!-- end col-md-8 -->
-        
-        <div class="col-md-4">
-          <div class="parallex-button"> <a class="page-scroll btn btn-lg btn-clean" href="#appoinment">Запись на прием</a> </div>
-          <!-- end parallex-button --> 
-        </div>
-        <!-- end col-md-4 --> 
-        
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"> <em>ЗАИНТЕРЕСОВАЛИСЬ ?</em>
+          <h2>Запишитесь на прием к интересующему Вас специалисту</h2>
+          <a class="section-scroll btn btn-lg btn-clean" href="appointment.php">запись он-лайн</a> </div>
+
+        <!-- end col-md-8 --> 
       </div>
       <!-- end row --> 
     </div>
     <!-- end container --> 
-  </div>
-  <!-- =-=-=-=-=-=-= SEPARATOR END =-=-=-=-=-=-= --> 
+  </section>
+  <!-- =-=-=-=-=-=-= PARALLEX END =-=-=-=-=-=-= -->
+
   
   <!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
   <section id="portfolio">
@@ -558,7 +548,7 @@
   <section class="section-padding parallex" id="working-hours" data-stellar-background-ratio="0.1">
     <div class="container">
       <div class="section-title-left white"> <strong>РАСПИСАНИЕ РАБОТЫ ЦЕНТРА</strong>
-        <h1 class="heading bold white">РАБОТАЕМ НА ВАШЕ ЗДОРОВЬЕ</h1>
+        <h1 class="heading bold white">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
         <hr class="white">
         <p class="white"> Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit.
           Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit. </p>
@@ -569,34 +559,20 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="opening-hour-grid">
-                  <h4>MON</h4>
-                  <span>08:00-15:00</span> </div>
+                  <h4>ПН-ПТ</h4>
+                  <span>10:00-19:00</span> </div>
               </div>
               <div class="col-md-4">
                 <div class="opening-hour-grid">
-                  <h4>TUE</h4>
-                  <span>10.00-16.00</span> </div>
+                  <h4>СБ</h4>
+                  <span>10.00-14.00</span> </div>
               </div>
               <div class="col-md-4">
                 <div class="opening-hour-grid">
-                  <h4>Wed</h4>
-                  <span>08:00-15:00</span> </div>
+                  <h4>ВС</h4>
+                  <span>выходной</span> </div>
               </div>
-              <div class="col-md-4">
-                <div class="opening-hour-grid">
-                  <h4>THU</h4>
-                  <span>08:00-18:00</span> </div>
-              </div>
-              <div class="col-md-4">
-                <div class="opening-hour-grid">
-                  <h4>Fri</h4>
-                  <span>07:00-19:00</span> </div>
-              </div>
-              <div class="col-md-4">
-                <div class="opening-hour-grid">
-                  <h4>Sat+Sun</h4>
-                  <span>CLOSED</span> </div>
-              </div>
+           
             </div>
           </div>
           <!-- End col-md-6 -->
@@ -646,7 +622,7 @@
                   <div class="blog-overlay-down">
                     <div class="blog-title">
                       <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h4>
-                      <div class="blog-content-meta hidden-sm">  <a href="#"> <?php the_tags(' <i class="fa fa-sitemap"></i><span>Теги:</span>'); ?></a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 5 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> <?php the_date('d.m.Y'); ?></a> &nbsp; </div>
+                      <div class="blog-content-meta hidden-sm">  <a href="#"> <?php the_tags(' <i class="fa fa-sitemap"></i><span>Теги:</span>'); ?></a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 0 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> <?php the_date('d.m.Y'); ?></a> &nbsp; </div>
                     </div>
                   </div>
                 </div>

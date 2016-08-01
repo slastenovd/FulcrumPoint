@@ -34,7 +34,7 @@
           </div>
             <!-- Footer Menu-->
             <div class="col-md-6 col-sm-6 footer-menu">
-              <?php $menu = wp_nav_menu( array('theme_location'  => 'footer_menu') );?>
+              <?php wp_nav_menu( array('theme_location'  => 'footer_menu') );?>
             </div>
             <!-- End Footer Menu--> 
         </div>
