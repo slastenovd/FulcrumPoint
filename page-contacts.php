@@ -16,20 +16,27 @@
 <!-- =-=-=-=-=-=-= PAGE HEADING SECTION END =-=-=-=-=-=-= --> 
 
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<!-- post -->
-	<?php the_content(); ?>
-
-<?php endwhile; ?>
-<!-- post navigation -->
-<?php else: ?>
-<!-- no posts found -->
-<?php endif; ?>
 
   <!-- =-=-=-=-=-=-= Contact Us =-=-=-=-=-=-= -->
   <section id="contact" class="padding-top-120">
     <div class="container"> 
-      
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <!-- post -->
+
+      <div class="section-title"> <strong><?php the_title(); ?></strong>
+        <h1 class="heading bold"></h1>
+        <hr>
+        <p> <?php the_content(); ?> </p>
+      </div>
+
+        
+
+      <?php endwhile; ?>
+      <!-- post navigation -->
+      <?php else: ?>
+      <!-- no posts found -->
+      <?php endif; ?>
+
       <!-- row -->
       <div class="row"> 
         
@@ -47,7 +54,7 @@
                 
                 <!-- contact-name -->
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Name" name="contactname" id="contact-name">
+                  <input type="text" class="form-control" placeholder="Ваше имя" name="contactname" id="contact-name">
                 </div>
                 <!-- /contact-name --> 
                 
@@ -59,7 +66,7 @@
                 
                 <!-- contact-email -->
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Email" name="contactemail" id="contact-email">
+                  <input type="text" class="form-control" placeholder="Ваш Email" name="contactemail" id="contact-email">
                 </div>
                 <!-- /contact-email --> 
                 
@@ -71,7 +78,7 @@
                 
                 <!-- contact-subject -->
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Subject" name="contactsubject" id="contact-subject">
+                  <input type="text" class="form-control" placeholder="Тема" name="contactsubject" id="contact-subject">
                 </div>
                 <!-- /contact-subject --> 
                 
@@ -83,7 +90,7 @@
                 
                 <!-- contact-message -->
                 <div class="form-group">
-                  <textarea rows="10" class="form-control" placeholder="Your Message" name="contactmessage" id="contact-message"></textarea>
+                  <textarea rows="10" class="form-control" placeholder="Сообщение" name="contactmessage" id="contact-message"></textarea>
                 </div>
                 <!-- /Contact Message --> 
                 
@@ -95,7 +102,7 @@
                 
                 <!-- Submit Button -->
                 <div class="form-group">
-                  <button type="submit"  class="btn btn-primary"> Send message </button>
+                  <button type="submit"  class="btn btn-primary"> Отправить сообщение </button>
                 </div>
                 <br><br>
                 <!-- /Submit Button --> 
@@ -117,17 +124,17 @@
           <!-- contact-info -->
           <div class="contact-info">
             <ul>
-              <li> <strong>Postal Address :</strong>
-                <p> Model Town Link Road <br />
-                  Lahore - Pakistan - PAK </p>
+              <li> <strong>Почтовый адрес :</strong>
+                <p> Комсомольск-на-Амуре <br />
+                  <?php echo get_option('theme_contacttext'); ?> </p>
               </li>
-              <li> <strong>Phone :</strong>
-                <p> Office : <a href="tel:0011234567890" title="Call Us">+1 (123) 456-7890</a> <br />
-                  FAX : <a href="tel:0011234567890" title="Call Us">+1 (923) 456-7890</a> </p>
+              <li> <strong>Телефон :</strong>
+                <p> Ресепшн : <a href="tel:<?php echo get_option('site_telephone'); ?>" title="Телефон"><?php echo get_option('site_telephone'); ?></a> <br />
+                  ФАКС : <a href="<?php echo get_option('site_telephone'); ?>" title="FAX"><?php echo get_option('site_telephone'); ?></a> </p>
               </li>
               <li> <strong>E-mail :</strong>
-                <p> Support : <a href="mailto:contact@scriptsbundle.com">Contact@scriptsbundle.com</a> <br />
-                  Sales : <a href="mailto:contact@scriptsbundle.com">Contact@scriptsbundle.com</a> </p>
+                <p> Запись на прием : <a href="mailto:<?php echo get_option('site_email'); ?>"><?php echo get_option('site_email'); ?></a> <br />
+                   </p>
               </li>
             </ul>
           </div>

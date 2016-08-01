@@ -603,7 +603,7 @@
       <div class="row">
         <div class="blog-grid padding-top-30"> 
 
-                <?php 
+              <?php 
               // Get team members with same tags
               $args = array(
                   'category_name' => 'articles, news',
@@ -665,42 +665,28 @@
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <div class="item">
-              <div class="profile-circle"> <img src="<?php bloginfo("template_url") ?>/images/admin-1.jpg" alt="" class="img-circle"> </div>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-            </div>
-            <div class="item">
-              <div class="profile-circle"> <img src="<?php bloginfo("template_url") ?>/images/admin-2.jpg" alt="" class="img-circle"> </div>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-            </div>
-            <div class="active item">
-              <div class="profile-circle"> <img src="<?php bloginfo("template_url") ?>/images/admin-3.jpg" alt="" class="img-circle"> </div>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-            </div>
-            <div class="item">
-              <div class="profile-circle"> <img src="<?php bloginfo("template_url") ?>/images/admin-1.jpg" alt="" class="img-circle"> </div>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-            </div>
-            <div class="item">
-              <div class="profile-circle"> <img src="<?php bloginfo("template_url") ?>/images/admin-2.jpg" alt="" class="img-circle"> </div>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-            </div>
-            <div class="item">
-              <div class="profile-circle"> <img src="<?php bloginfo("template_url") ?>/images/admin-3.jpg" alt="" class="img-circle"> </div>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-            </div>
+             <?php 
+              $args = array(
+                  'post_type'        => 'testimonils',
+                  'posts_per_page'   => 6,
+          
+              );
+              $posts = get_posts($args);
+
+              foreach( $posts as $post ){
+                setup_postdata($post);
+             ?>
+
+                <div class="item">
+                  <div class="profile-circle"><?php  the_post_thumbnail( 'testimonial-tumbnail', 'img-circle' );  ?></div>
+                  <blockquote><?php the_title();?><?php the_content();?></blockquote>
+                </div>
+
+             <?php
+               }
+               wp_reset_postdata();
+             ?>
+
           </div>
         </div>
       </div>

@@ -96,6 +96,61 @@
 	      'supports' => array('title','editor','author','thumbnail','excerpt','comments'),
 	    )
 	  );
+
+	  register_post_type( 'team',
+	    array(
+	      'labels' => array(
+	        'name' => __( 'Персонал' ),
+	        'singular_name' => __( 'team' ),
+
+			'add_new'            => 'Добавить врача', // для добавления новой записи
+	        'add_new_item'       => 'Персонал', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Изменить врача', // для редактирования типа записи
+			'new_item'           => 'Новый доктор', // текст новой записи
+			'view_item'          => 'Просмотреть врача', // для просмотра записи этого типа.
+			// 'search_items'       => '', // для поиска по этим типам записи
+			// 'not_found'          => '', // если в результате поиска ничего не было найдено
+			// 'not_found_in_trash' => '', // если не было найдено в корзине
+			// 'parent_item_colon'  => '', // для родительских типов. для древовидных типов
+			// 'menu_name'          => '', // название меню
+
+	      ),
+	      'public' => true,
+	      'has_archive' => true,
+	      'menu_position' => 5,
+	      'menu_icon' => 'dashicons-businessman',
+	      'taxonomies' => array('post_tag'),
+	      'supports' => array('title','editor','author','thumbnail','excerpt','comments'),
+	    )
+	  );
+
+	  register_post_type( 'testimonils',
+	    array(
+	      'labels' => array(
+	        'name' => __( 'Отзывы' ),
+	        'singular_name' => __( 'testimonils' ),
+
+			'add_new'            => 'Добавить отзыв', // для добавления новой записи
+	        'add_new_item'       => 'Отзывы', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Изменить отзыв', // для редактирования типа записи
+			'new_item'           => 'Новый отзыв', // текст новой записи
+			'view_item'          => 'Просмотреть отзыв', // для просмотра записи этого типа.
+			// 'search_items'       => '', // для поиска по этим типам записи
+			// 'not_found'          => '', // если в результате поиска ничего не было найдено
+			// 'not_found_in_trash' => '', // если не было найдено в корзине
+			// 'parent_item_colon'  => '', // для родительских типов. для древовидных типов
+			// 'menu_name'          => '', // название меню
+
+	      ),
+	      'public' => true,
+	      'has_archive' => true,
+	      'menu_position' => 5,
+	      'menu_icon' => 'dashicons-format-status',
+	      'taxonomies' => array('post_tag'),
+	      'supports' => array('title','editor','author','thumbnail','excerpt','comments'),
+	    )
+	  );
+
 	}
 
 
@@ -106,6 +161,8 @@
 		add_image_size( 'banner-tumbnail', 750, 200, array('left','center') );
 		add_image_size( 'blog-preview-tumbnail', 555, 370, array('center','center') );
 		add_image_size( 'blog-tumbnail', 720, 480, array('center','center') );
+		add_image_size( 'team-tumbnail', 360, 500, array('center','center') );
+		add_image_size( 'testimonial-tumbnail', 240, 240, array('center','center') );
 
 		register_nav_menus(array(	'header_menu'=>'Меню в шапке', 
 									'footer_menu'=>'Меню внизу' )
