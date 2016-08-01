@@ -29,11 +29,9 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <!-- post -->
 
-
-
               <!-- image grid -->
               <div class="post-image zoom-pic">
-                  <a href="#"> <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?></a>
+                  <a href="#"> <?php  the_post_thumbnail( 'blog-tumbnail', 'img-responsive' );  ?></a>
               </div><!-- image grid end -->
               <!-- post content -->
               <div class="post-content">

@@ -102,8 +102,10 @@
 	function learningWordPress_setup(){
 		// Подключение миниатюр
 		add_theme_support( 'post-thumbnails' );
-		 add_image_size( 'small-tumbnail', 180, 120, array('left','top') );
-		 add_image_size( 'banner-tumbnail', 750, 200, array('left','center') );
+		add_image_size( 'small-tumbnail', 180, 120, array('left','top') );
+		add_image_size( 'banner-tumbnail', 750, 200, array('left','center') );
+		add_image_size( 'blog-preview-tumbnail', 555, 370, array('center','center') );
+		add_image_size( 'blog-tumbnail', 720, 480, array('center','center') );
 
 		register_nav_menus(array(	'header_menu'=>'Меню в шапке', 
 									'footer_menu'=>'Меню внизу' )
