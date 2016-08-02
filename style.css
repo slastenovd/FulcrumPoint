@@ -2513,7 +2513,8 @@ ul.choose-list li {
 	overflow: hidden;
 }
 .post-image img {
-	width: 100%;
+	width: auto;
+	height: auto;
 	max-height: 480px !important;
 }
 .post-image > a img {

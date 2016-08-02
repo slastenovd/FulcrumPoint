@@ -30,21 +30,7 @@
 
                     <div class="project-overview">
                         <div class="row">
-                          
-                            <div class="col-md-8" >
-                                
                                   <?php the_content(); ?>
-                            </div>
-
-                            <div class="col-md-4 quick-overview">
-                                <ul class="portfolio-meta">
-                                    <li><span> Первичная консультация </span> 1000 p.</li>
-                                    <li><span> Повторная консультация </span> 800 p.</li>
-                                    <li><span> Врачей по специальности </span> 3</li>
-                                    <li><span> Поделиться </span> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-
                         </div><!-- /.row -->
                       </div><!-- /.project-overview -->
 
@@ -63,22 +49,6 @@
                         $stringtags .= $tag->name . ', '; 
                       }
                     }
-
-                    // Get articles with same tags
-                    $args = array(
-                        'category_name' => 'articles',
-                        'tag' => $stringtags,
-                    );
-                    $posts = get_posts($args);
-
-                    if( count($posts) ){
-                      $post = $posts[0];
-                      setup_postdata($post);
-                    ?>
-                      <div class="read-more"> <a class="btn btn-primary" href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i> Подробнее</a> </div>
-                    <?php
-                    }
-                  wp_reset_postdata();
                   ?>                                  
 
             </div><!-- /.container -->
@@ -101,7 +71,7 @@
             <?php 
               // Get team members with same tags
               $args = array(
-                  'category_name' => 'personal',
+                  'post_type' => 'team',
                   'tag' => $stringtags,
               );
               $posts = get_posts($args);
@@ -149,6 +119,64 @@
     </section>
       <!-- =-=-=-=-=-=-= OUR TEAM END =-=-=-=-=-=-= -->
 
+
+   <!-- =-=-=-=-=-=-= BLOG & NEWS =-=-=-=-=-=-= -->
+  <section class="section-padding" id="blog">
+    <div class="container">
+
+      <div class="section-title"> <strong>НОВОСТИ & СТАТЬИ </strong>
+        <h1 class="heading bold">по теме <?php the_title(); ?></h1>
+        <hr>
+        <p>  </p>
+      </div>
+
+      
+      <div class="row">
+        <div class="blog-grid padding-top-30"> 
+
+              <?php 
+              // Get team members with same tags
+              $args = array(
+                  'category_name' => 'articles, news',
+                  'tag' => $stringtags,
+                  'posts_per_page'   => 10,
+          
+              );
+              $posts = get_posts($args);
+
+              foreach( $posts as $post ){
+                setup_postdata($post);
+              ?>
+
+              <!-- Blog Grid -->
+             <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6 blog-post">
+              
+                <div class="blog-container" > <?php  the_post_thumbnail( 'blog-preview-tumbnail', 'img-responsive' );  ?>
+                  <div class="blog-overlay-down">
+                    <div class="blog-title">
+                      <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h4>
+                      <div class="blog-content-meta hidden-sm">  <a href="#"> <?php the_tags(' <i class="fa fa-sitemap"></i><span>Теги:</span>'); ?></a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 0 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> <?php the_date('d.m.Y'); ?></a> &nbsp; </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-description">
+                  <p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+                  <div class="read-more"> <a class="btn btn-blog btn-default" href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i> Читать</a> </div>
+                </div>
+              </div>
+              <!-- Blog Grid End --> 
+
+              <?php
+               }
+               wp_reset_postdata();
+              ?>
+              <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- End row --> 
+    </div>
+  </section>
+  <!-- =-=-=-=-=-=-= BLOG & NEWS  END =-=-=-=-=-=-= -->
 
           
     

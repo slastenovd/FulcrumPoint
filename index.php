@@ -225,208 +225,27 @@
   </section>
   <!-- =-=-=-=-=-=-= PARALLEX END =-=-=-=-=-=-= -->
 
-  
   <!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
-  <section id="portfolio">
-    <div class="portfolio-container text-center">
-      <ul id="portfolio-grid" class="four-column hover-four">
-        <li class="portfolio-item" data-groups='["all", "identety", "interface"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/1.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Кабинет неврологии</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/1.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "web"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/2.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Рефлексотерапия</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/2.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "web"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/3.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Рефлексотерапия</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/3.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "design"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/4.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/4.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "design"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/5.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/5.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "design"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/6.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/6.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "design"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/7.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/7.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "design"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/8.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/8.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "web"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/9.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/9.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "interface"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/10.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/10.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "design"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/11.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/11.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-        <li class="portfolio-item" data-groups='["all", "identety", "design"]'>
-          <div class="portfolio">
-            <div class="tt-overlay"></div>
-            <img src="<?php bloginfo("template_url") ?>/images/portfolio/12.jpg" alt="">
-            <div class="portfolio-info">
-              <h3 class="project-title">Project Title</h3>
-              <a href="#" class="links">App Design</a> </div>
-            <!-- /.project-info -->
-            
-            <ul class="portfolio-details">
-              <li><a class="tt-lightbox" href="<?php bloginfo("template_url") ?>/images/portfolio/12.jpg"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-external-link"></i></a></li>
-            </ul>
-          </div>
-          <!-- /.recent-project --> 
-        </li>
-      </ul>
-    </div>
-    <!-- portfolio-container --> <!-- end portfolio-content --> 
-    <!-- end portfolio-section --> 
-  </section>
+<?php 
+// Get team members with same tags
+$args = array(
+    'category_name' => 'photos',
+    // 'post_type' => 'testimonils',
+    'posts_per_page'   => 4,
+
+);
+$posts = get_posts($args);
+
+foreach( $posts as $post ){
+  setup_postdata($post);
+  the_content( );
+?>
+
+
+<?php
+ }
+ wp_reset_postdata();
+?>
   <!-- =-=-=-=-=-=-= PORTFOLIO END =-=-=-=-=-=-= --> 
   
   <!-- =-=-=-=-=-=-= APPOINMENT SECTION =-=-=-=-=-=-= -->
@@ -495,7 +314,8 @@
             <?php 
               // Get team members with same tags
               $args = array(
-                  'category_name' => 'personal',
+                  // 'category_name' => 'personal',
+                  'post_type' => 'team',
                   // 'tag' => $stringtags,
               );
               $posts = get_posts($args);
@@ -509,7 +329,7 @@
                   <div class="col-xs-12 col-md-4 col-sm-6 team-grid">
                     <div class="team-img-container">
                       <div class="team-overlay"> <a href="#"><i class="fa fa-link"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                      <?php  the_post_thumbnail( 'full', 'img-responsive' );  ?>
+                      <?php  the_post_thumbnail( 'team-tumbnail', 'img-responsive' );  ?>
                       <div class="team-overlay-down">
                         <div class="team-title">
                           <a href="<?php the_permalink(); ?>">

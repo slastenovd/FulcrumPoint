@@ -22,7 +22,7 @@
   <section class="section-padding" id="blog">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-12"> 
+        <div class="col-md-12"> 
           <!-- post grid -->
           <div class="post-block">
 
@@ -151,13 +151,8 @@
               
         
         </div>
-        <!-- /.col-md-8 -->
-        <!-- right column -->
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <?php get_sidebar(); ?>
-        </div>
-        <!-- right column end-->
-        <!-- /.col-md-4 --> 
+
+
       </div>
       <!-- End row --> 
     </div>

@@ -46,7 +46,7 @@
               </div>
               <div class="team-description">
               		<a href="<?php the_permalink(); ?>">
-                		<p><?php echo substr( get_the_content() , 0, 150).'[...]'; ?></p>
+                		<p><?php the_excerpt(); ?></p>
                 	</a>
               </div>
             </div>

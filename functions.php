@@ -120,7 +120,7 @@
 	      'menu_position' => 5,
 	      'menu_icon' => 'dashicons-businessman',
 	      'taxonomies' => array('post_tag'),
-	      'supports' => array('title','editor','author','thumbnail','excerpt','comments'),
+	      'supports' => array('title','editor','custom-fields','thumbnail','excerpt','comments'),
 	    )
 	  );
 
@@ -223,8 +223,7 @@
 	add_action( 'widgets_init', 'FulcrumPoint_widgets_init' );	
 
 /* 
- * Изменение вывода галереи через шоткод 
- * Смотреть функцию gallery_shortcode в http://wp-kama.ru/filecode/wp-includes/media.php
+ * Изменение вывода галереи через шорткод 
  * $output = apply_filters( 'post_gallery', '', $attr );
  */
 add_filter('post_gallery', 'my_gallery_output', 10, 2);
@@ -260,7 +259,7 @@ function my_gallery_output( $output, $attr ){
 						<img src="'.  $src  .'" alt="">
 						<div class="portfolio-info">
 							<h3 class="project-title">'. $title .'</h3>
-		            		<a href="#" class="links">App Design</a> 
+		            		<a href="#" class="links">'. $caption .'</a> 
 		            	</div>
 		            	<ul class="portfolio-details">
         		      		<li><a class="tt-lightbox" href="'.  $src  .'"><i class="fa fa-search"></i></a></li>
