@@ -455,6 +455,7 @@ foreach( $posts as $post ){
 
           </div>
         </div>
+        <a class="section-scroll btn btn-lg btn-clean" href="contacts#contact_form">оставить свой отзыв</a> </div>
       </div>
       <!-- end row --> 
     </div>

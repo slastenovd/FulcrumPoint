@@ -38,65 +38,49 @@
       <?php endif; ?>
 
       <!-- row -->
-      <div class="row"> 
-        
+      <div id="contact_form" class="row"> 
         <!-- col-md-8 -->
         <div class="col-md-8 col-sm-8"> 
-          
           <!-- row -->
           <div class="row"> 
-            
             <!-- form -->
             <form  method="post">
-              
               <!-- col-md-6 -->
               <div class="col-md-6"> 
-                
                 <!-- contact-name -->
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Ваше имя" name="contactname" id="contact-name">
                 </div>
                 <!-- /contact-name --> 
-                
               </div>
               <!-- /col-md-6 --> 
-              
               <!-- col-md-6 -->
               <div class="col-md-6"> 
-                
                 <!-- contact-email -->
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Ваш Email" name="contactemail" id="contact-email">
                 </div>
                 <!-- /contact-email --> 
-                
               </div>
               <!-- /col-md-6 --> 
-              
               <!-- col-md-12 -->
               <div class="col-md-12"> 
-                
                 <!-- contact-subject -->
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Тема" name="contactsubject" id="contact-subject">
                 </div>
                 <!-- /contact-subject --> 
-                
               </div>
               <!-- /col-md-12 --> 
-              
               <!-- col-md-12 -->
               <div class="col-md-12"> 
-                
                 <!-- contact-message -->
                 <div class="form-group">
                   <textarea rows="10" class="form-control" placeholder="Сообщение" name="contactmessage" id="contact-message"></textarea>
                 </div>
                 <!-- /Contact Message --> 
-                
               </div>
               <!-- /col-md-12 --> 
-              
               <!-- col-md-12 -->
               <div class="col-md-12"> 
                 

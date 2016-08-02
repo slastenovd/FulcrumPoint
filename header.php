@@ -63,11 +63,11 @@
         <div class="info-box">
           <div class="icon"><span class="icon-phone"></span></div>
           <div>Телефон</div>
-          <a class="location" href="#"><?php echo get_option('site_telephone'); ?></a> </div>
+          <a class="location" href="tel:<?php echo get_option('site_telephone'); ?>"><?php echo get_option('site_telephone'); ?></a> </div>
         <div class="info-box">
           <div class="icon"><span class="icon-map"></span></div>
           <div>Комсомольск-на-Амуре</div>
-          <a class="location" href="#"><?php echo get_option('theme_contacttext'); ?></a> </div>
+          <a class="location" href="contacts#about-us"><?php echo get_option('theme_contacttext'); ?></a> </div>
       </div>
     </div>
   </div>
