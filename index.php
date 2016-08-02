@@ -215,7 +215,7 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"> <em>ЗАИНТЕРЕСОВАЛИСЬ ?</em>
           <h2>Запишитесь на прием к интересующему Вас специалисту</h2>
-          <a class="section-scroll btn btn-lg btn-clean" href="appointment.php">запись он-лайн</a> </div>
+          <a class="section-scroll btn btn-lg btn-clean" href="appointment">запись он-лайн</a> </div>
 
         <!-- end col-md-8 --> 
       </div>
@@ -248,55 +248,7 @@ foreach( $posts as $post ){
 ?>
   <!-- =-=-=-=-=-=-= PORTFOLIO END =-=-=-=-=-=-= --> 
   
-  <!-- =-=-=-=-=-=-= APPOINMENT SECTION =-=-=-=-=-=-= -->
-  <section class="padding-top-120" id="appoinment">
-    <div class="container">
-      <div class="section-title-left"> <strong>ЗАПИШИТЕСЬ НА ПРИЕМ</strong>
-        <h1 class="heading bold">Заполните поля формы</h1>
-        <hr>
-        <p> Мы перезвоним Вам для уточнения деталей в ближайшее время
-          </p>
-      </div>
-      <div class="row ">
-        <div class="appointment-area  padding-top-30">
-          <div class="col-md-7">
-            <form class="appointment-form" method="post">
-              <ul class="row">
-                <li class="col-sm-12">
-                  <label>Фамилия &amp; Имя</label>
-                  <input type="text" placeholder="Введите Ваше имя" class="form-control">
-                </li>
-                <li class="col-sm-12">
-                  <label>Номер телефона</label>
-                  <input type="text" placeholder="Введите Ваш контактный номер" class="form-control">
-                </li>
-                <li class="col-sm-12">
-                  <label>Предпочитаемая дата приема</label>
-                  <input type="text" placeholder="Укажите дату" class="form-control datepicker" value="" data-date-format="mm/dd/yy">
-                </li>
-                <li class="col-sm-12">
-                  <label>Детали</label>
-                  <textarea placeholder="Ваше сообщение" class="form-control" cols="7" rows="9"></textarea>
-                </li>
-              </ul>
-              <div class="appintment-form-btm">
-                
-                <input type="submit" class="btn btn-primary" value="Записаться">
-              </div>
-            </form>
-          </div>
-          <!-- End col-md-6 -->
-          
-          <div  class="col-md-5 img-history">
-            <figure> <img alt="" src="<?php bloginfo("template_url") ?>/images/appionment.png"> </figure>
-          </div>
-          <!-- End col-md-6 --> 
-        </div>
-      </div>
-      <!-- End row --> 
-    </div>
-  </section>
-  <!-- =-=-=-=-=-=-= APPOINMENT SECTION  END =-=-=-=-=-=-= --> 
+ 
 
 <!-- =-=-=-=-=-=-= OUR TEAM =-=-=-=-=-=-= -->
     <section class="" id="team">
