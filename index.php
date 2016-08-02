@@ -607,6 +607,7 @@
               // Get team members with same tags
               $args = array(
                   'category_name' => 'articles, news',
+                  // 'post_type' => 'testimonils',
                   'posts_per_page'   => 4,
           
               );
@@ -634,9 +635,9 @@
               </div>
               <!-- Blog Grid End --> 
 
-                     <?php
-              }
-              wp_reset_postdata();
+              <?php
+               }
+               wp_reset_postdata();
               ?>
               <div class="clearfix"></div>
               <div class="align-center  view-more"> <a href="category/news/" class="btn btn-blog btn-default"><i class="fa fa-plus"></i> Перейти к новостям</a> </div>     
@@ -648,44 +649,37 @@
   <!-- =-=-=-=-=-=-= BLOG & NEWS  END =-=-=-=-=-=-= -->
 
 
+<!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS =-=-=-=-=-=-= -->
+ <?php 
+    $posts = get_posts( array('post_type' => 'testimonils', 'posts_per_page' => 6 ) );
+ ?>
 
-  <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS =-=-=-=-=-=-= -->
-  <section  data-stellar-background-ratio="0" class="testimonial-bg parallex section-padding-140 text-center">
+  <section id="my-testimonils" data-stellar-background-ratio="0" class="testimonial-bg parallex section-padding-140 text-center padding-top-120">
     <div class="container">
       <div class="col-md-8 col-md-offset-2">
-        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000"> 
+        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="6000"> 
           <!-- Carousel indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
-            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-            <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
-            <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
-            <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
-            <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+            <?php for ($i=0; $i < count($posts); $i++) { ?>
+              <li data-target="#fade-quote-carousel" data-slide-to="<?php echo $i; ?>" <?php if( $i === 0 ) { echo ' class="active"'; } ?> ></li>
+            <? } ?>
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-             <?php 
-              $args = array(
-                  'post_type'        => 'testimonils',
-                  'posts_per_page'   => 6,
-          
-              );
-              $posts = get_posts($args);
 
-              foreach( $posts as $post ){
-                setup_postdata($post);
-             ?>
-
-                <div class="item">
-                  <div class="profile-circle"><?php  the_post_thumbnail( 'testimonial-tumbnail', 'img-circle' );  ?></div>
-                  <blockquote><?php the_title();?><?php the_content();?></blockquote>
-                </div>
-
-             <?php
-               }
-               wp_reset_postdata();
-             ?>
+           <?php 
+            $i = 0;
+            foreach( $posts as $post ){
+              setup_postdata($post); 
+           ?>
+              <div class="<?php if( $i === 0 ) { echo 'active ';}?>item">
+                <div class="profile-circle"><img src="<?php  the_post_thumbnail_url('testimonial-tumbnail'); ?>" alt="" class="img-circle"> </div>
+                <blockquote><p><?php the_title();?><?php the_content(); ?> </p></blockquote>
+              </div>
+           <?php
+             $i++; }
+             wp_reset_postdata();
+           ?>            
 
           </div>
         </div>

@@ -1416,6 +1416,7 @@ ul.services-list li {
 	margin: auto;
 	max-height: 100%;
 	max-width: 100%;
+	height: auto;
 }
 .team-overlay-down {
 	/*background: rgba(214, 177, 97, 0.8) none repeat scroll 0 0;*/
@@ -2367,8 +2368,8 @@ ul.choose-list li {
 	border: none;
 }
 #fade-quote-carousel .profile-circle {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	margin: 0 auto;
 	border-radius: 100px;
 }
