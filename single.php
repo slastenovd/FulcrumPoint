@@ -57,56 +57,13 @@
 
                   <?php the_content(); ?>
                   
-                    <div class="share-wrapper clearfix">
-                      <div class="total-shares">
-                        <em data-count="267" id="countUp">267</em>
-                        <div class="caption">Shares</div>
-                      </div>
 
-                      <div class="share-buttons">
-                        <a href="#" class="social-share facebook">
-                          <i class="fa fa-facebook"></i> 
-                          <span class="alt-text">Share</span>
-                        </a>
-                        <a href="#" class="social-share twitter">
-                          <i class="fa fa-twitter"></i> 
-                          <span class="alt-text">Tweet</span>
-                        </a>
-                        <a href="#" class="social-share google-plus">
-                          <i class="fa fa-google-plus"></i>
-                        </a>
-                        <a href="#" class="social-share linked_in">
-                          <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-share pinterest">
-                          <i class="fa fa-pinterest"></i>
-                        </a>
-                      </div>
-                    </div>
                   
                   
-                    <div class="related-posts">
-                      <div class="related-grid">
-                        <img alt="" src="images/blog/related-1.jpg">
-                        <div class="related-grid-name">
-                          <span>PREVIOUS ARTICLE</span>
-                          <h5><a href="#">Roll Out of Bed With Gorgeous Hair </a> </h5>
-                        </div>
-                      </div><!-- Other Post -->
-                      <div class="related-grid">
-                        <img alt="" src="images/blog/related-1.jpg">
-                        <div class="related-grid-name">
-                          <span>NEXT ARTICLE</span>
-                          <h5><a href="#">Roll Out of Bed With Gorgeous Hair </a> </h5>
-                        </div>
-                      </div><!-- Other Post -->
-                    </div>
-                  
+
                 
               </div>
                <!-- post content end -->
-
-
 
 
 
@@ -116,38 +73,24 @@
             <!-- no posts found -->
             <?php endif; ?>
 
-
-
-
-
-
             </div>
           <!-- post grid end --> 
-          
           
 
            <div class="clearfix"></div>
            <span class="separator"></span>
            <div id="comments-section">
 
-<ol class="commentlist">
-  <?php
-    // Получаем комментарии поста с ID XXX из базы данных 
-    $comments = get_comments(array(
-      'post_id' => $post->ID,
-      'status' => 'approve' // комментарии прошедшие модерацию
-    ));
 
-    // Формируем вывод списка полученных комментариев
-    wp_list_comments(array(
-      'per_page' => 10, // Пагинация комментариев - по 10 на страницу
-      'reverse_top_level' => false // Показываем последние комментарии в начале
-    ), $comments);
-  ?>
-</ol>
+            <div class="comment-section">
+            <?php if ( comments_open() || '0' != get_comments_number() ) : comments_template(); endif; ?>
+            </div>
+
+
+
               </div>
           
-    <?php comment_form( array(), $post->ID ); ?>
+    <?php //comment_form( array(), $post->ID ); ?>
               
         
         </div>
