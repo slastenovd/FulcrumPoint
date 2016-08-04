@@ -10,7 +10,7 @@
             <div class="col-md-3 contact">
             <h4>Контакты</h4>
             <ul class="list-inline">
-                <li><a href="contacts#about-us"><span><i class="fa fa-map-marker"></i></span> Комсомольск-на-Амуре, <?php echo get_option('theme_contacttext'); ?></a></li>
+                <li><span><i class="fa fa-map-marker"></i></span><a href="contacts#about-us"> Комсомольск-на-Амуре, <?php echo get_option('theme_contacttext'); ?></a></li>
             <li><span><i class="fa fa-phone"></i></span> <?php echo get_option('site_email'); ?> </li>
             <li><span><i class="fa fa-envelope"></i></span> contact@oporycentr.ru </li>
             </ul>

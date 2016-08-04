@@ -3209,7 +3209,7 @@ footer h4 {
 	margin: 0;
 	padding: 0;
 }
-.inner-footer .contact ul li {
+.inner-footer .contact ul li, .inner-footer .contact ul li a {
 	color: #8f8f8f;
 	display: block;
 	font-family: "Open Sans", sans-serif;
@@ -3220,7 +3220,7 @@ footer h4 {
 	margin-bottom: 20px;
 	overflow: hidden;
 }
-.inner-footer .contact ul li:hover, .inner-footer .contact ul li:hover {
+.inner-footer .contact ul li:hover, .inner-footer .contact ul li:hover, .inner-footer .contact ul li a:hover, .inner-footer .contact ul li a:hover {
 	color: #8cbc15;
 	cursor: pointer;
 }
