@@ -6,7 +6,6 @@
 <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <![endif]-->
-<meta name="description" content="">
 <meta name="author" content="ScriptsBundle">
 <title><?php bloginfo("name") ?></title>
 <!-- =-=-=-=-=-=-= Favicons Icon =-=-=-=-=-=-= -->

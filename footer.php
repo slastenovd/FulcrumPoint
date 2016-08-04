@@ -10,7 +10,7 @@
             <div class="col-md-3 contact">
             <h4>Контакты</h4>
             <ul class="list-inline">
-                <li><span><i class="fa fa-map-marker"></i></span> Комсомольск-на-Амуре, <?php echo get_option('theme_contacttext'); ?></li>
+                <li><a href="contacts#about-us"><span><i class="fa fa-map-marker"></i></span> Комсомольск-на-Амуре, <?php echo get_option('theme_contacttext'); ?></a></li>
             <li><span><i class="fa fa-phone"></i></span> <?php echo get_option('site_email'); ?> </li>
             <li><span><i class="fa fa-envelope"></i></span> contact@oporycentr.ru </li>
             </ul>
@@ -72,6 +72,10 @@
 <script src="<?php bloginfo("template_url") ?>/js/jquery.form.min.js"></script> 
 
 
-
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'uLaCyG0Fn4';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>
