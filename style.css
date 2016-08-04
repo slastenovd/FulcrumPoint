@@ -2613,10 +2613,10 @@ ul.choose-list li {
 /*** slider post ***/
 #post-slider {
 }
-iframe {
+/*iframe {
 	height: 480px !important;
 	width: 100%;
-}
+}*/
 #post-slider .item img {
 	width: 100%;
 	max-height: 480px !important;
