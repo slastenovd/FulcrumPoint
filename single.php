@@ -42,7 +42,7 @@
                   <div class="meta">
                       <span class="meta-comment">
                         <i class="fa fa-commenting"></i>
-                       <a class="meta-link" href="#">comments (12)</a>
+                            <?php comments_number('пока нет комментариев', '1 комменатрий', '% комментариев'); ?>
                       </span>
                       <span class="meta-author">
                         <i class="fa fa-user"></i>
@@ -81,20 +81,15 @@
            <span class="separator"></span>
            <div id="comments-section">
 
-
-            <div class="comment-section">
-            <?php if ( comments_open() || '0' != get_comments_number() ) : comments_template(); endif; ?>
-            </div>
-
-
-
+              <div class="comment-section">
+                 <?php if ( comments_open() || '0' != get_comments_number() ) : comments_template(); endif; ?>
               </div>
+
+           </div>
           
-    <?php //comment_form( array(), $post->ID ); ?>
-              
+          <?php //comment_form( array(), $post->ID ); ?>
         
         </div>
-
 
       </div>
       <!-- End row --> 

@@ -93,26 +93,26 @@ if ( post_password_required() ) {
 			<?php _e( 'Комментарии отключены.', '' ); ?>
 		<?php endif; ?>
 		
-		<?php $fields = array( 'author' => ' '.'<input class="form-control" placeholder="Your Name.." id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />
-			',
-			'email'  => ' '.'<input id="email" class="form-control" placeholder="Your Email.." name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />',
-			'url'   => ' ' . '<input id="url" class="form-control" placeholder="Your Website.." name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" />'
+		<?php $fields = array( 'author' => ' '.'<div class="col-md-6"><div class="form-group"><input class="form-control" placeholder="Ваше имя.." id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />
+			</div></div>',
+			'email'  => ' '.'<div class="col-md-6"><div class="form-group"><input id="email" class="form-control" placeholder="Ваш Email.." name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
 			);
 
 			$comments_args = array(
 				'fields' =>  $fields,
 				'title_reply'=>'Оставьте комментарий',
-				'title_reply_before' => '<div class="heading-side-bar"><h2>',
-				'title_reply_after' => '<h2></div><p class="comment-notes"><small>Ваш email не будет опубликован. Обязательные поля отмечены</small><span class="required">*</span></p>',
 				'class_submit' => 'btn btn-primary',
-				'comment_field' => '<textarea id="comment" class="form-control" name="comment" rows="4" cols="100" aria-required="true" placeholder="Напишите свой комментарий здесь.."></textarea>',
+				'submit_field' => '<div class="col-md-12"><div class="form-group"><p class="form-submit">%1$s %2$s</a></div></div>',
+				'comment_field' => '<div class="col-md-12"><div class="form-group"><textarea id="comment" class="form-control" name="comment" rows="4" cols="100" aria-required="true" placeholder="Напишите свой комментарий здесь.."></textarea></div></div>',
 				'comment_notes_after' => '',
 				'id_submit' => 'submit-btn'
 			);
 		?>
 
-		<div class="row">
-			<?php comment_form($comments_args); ?>
+		 <div class="col-md-8 col-sm-8">
+			<div class="row">
+				<?php comment_form($comments_args); ?>
+			</div>
 		</div>
 	</div>
 </div>

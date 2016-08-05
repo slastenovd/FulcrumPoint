@@ -155,7 +155,12 @@
                   <div class="blog-overlay-down">
                     <div class="blog-title">
                       <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h4>
-                      <div class="blog-content-meta hidden-sm">  <a href="#"> <?php the_tags(' <i class="fa fa-sitemap"></i><span>Теги:</span>'); ?></a> &nbsp; <i class="fa fa-comment-o"></i> <a href="#"> 0 Comments</a> &nbsp; <i class="fa fa-calendar"></i> <a href="#"> <?php the_date('d.m.Y'); ?></a> &nbsp; </div>
+                      <div class="blog-content-meta hidden-sm">  <a href="#"> <?php the_tags(' <i class="fa fa-sitemap"></i><span>Теги:</span>'); ?></a> &nbsp; <i class="fa fa-comment-o"></i> 
+
+
+                         <?php comments_number('пока нет комментариев', '1 комменатрий', '% комментариев'); ?>
+
+                       &nbsp; <i class="fa fa-calendar"></i> <a href="#"> <?php the_date('d.m.Y'); ?></a> &nbsp; </div>
                     </div>
                   </div>
                 </div>
