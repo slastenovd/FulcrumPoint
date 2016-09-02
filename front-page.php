@@ -317,47 +317,7 @@ foreach( $posts as $post ){
 
   
   <!-- =-=-=-=-=-=-= OPENING HOURS SECTION =-=-=-=-=-=-= -->
-  <section class="section-padding parallex" id="working-hours" data-stellar-background-ratio="0.1">
-    <div class="container">
-      <div class="section-title-left white"> <strong>РАСПИСАНИЕ РАБОТЫ ЦЕНТРА</strong>
-        <h1 class="heading bold white">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
-        <hr class="white">
-        <p class="white"> Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit.
-          Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit. </p>
-      </div>
-      <div class="row">
-        <div class="working-area  padding-top-30">
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="opening-hour-grid">
-                  <h4>ПН-ПТ</h4>
-                  <span>10:00-19:00</span> </div>
-              </div>
-              <div class="col-md-4">
-                <div class="opening-hour-grid">
-                  <h4>СБ</h4>
-                  <span>10.00-14.00</span> </div>
-              </div>
-              <div class="col-md-4">
-                <div class="opening-hour-grid">
-                  <h4>ВС</h4>
-                  <span>выходной</span> </div>
-              </div>
-           
-            </div>
-          </div>
-          <!-- End col-md-6 -->
-          <div  class="col-md-4">
-            <h3>Пожалуйста запишитесь на прием заранее</h3>
-            <p>Ut fringilla ac metus rhoncus sollicitudin. Curabitur at sagittis justo, eu laoreet lectus. Mauris augue ex, consectetur ac pellentesque ac, feugiat lacinia eros. Ut bibendum mi in imperdiet feugiat. Duis porttitor dapibus odio vitae rutrum. Nullam viverra risus et lacus scelerisque laoreet. </p>
-          </div>
-          <!-- End col-md-6 --> 
-        </div>
-      </div>
-      <!-- End row --> 
-    </div>
-  </section>
+<?php require('openinghours.php'); ?>
   <!-- =-=-=-=-=-=-= OPENING HOURS SECTION  END =-=-=-=-=-=-= --> 
   
    <!-- =-=-=-=-=-=-= BLOG & NEWS =-=-=-=-=-=-= -->
@@ -407,45 +367,7 @@ foreach( $posts as $post ){
 
 
 <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS =-=-=-=-=-=-= -->
- <?php 
-    $posts = get_posts( array('post_type' => 'testimonils', 'posts_per_page' => 6 ) );
- ?>
-
-  <section id="my-testimonils" data-stellar-background-ratio="0" class="testimonial-bg parallex section-padding-140 text-center padding-top-120">
-    <div class="container">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="6000"> 
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
-            <?php for ($i=0; $i < count($posts); $i++) { ?>
-              <li data-target="#fade-quote-carousel" data-slide-to="<?php echo $i; ?>" <?php if( $i === 0 ) { echo ' class="active"'; } ?> ></li>
-            <? } ?>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-
-           <?php 
-            $i = 0;
-            foreach( $posts as $post ){
-              setup_postdata($post); 
-           ?>
-              <div class="<?php if( $i === 0 ) { echo 'active ';}?>item">
-                <div class="profile-circle"><img src="<?php  the_post_thumbnail_url('testimonial-tumbnail'); ?>" alt="" class="img-circle"> </div>
-                <blockquote><p><?php the_title();?><?php the_content(); ?> </p></blockquote>
-              </div>
-           <?php
-             $i++; }
-             wp_reset_postdata();
-           ?>            
-
-          </div>
-        </div>
-        <a class="section-scroll btn btn-lg btn-clean" href="contacts#contact_form">оставить свой отзыв</a> </div>
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
+<?php require('testimonils.php'); ?>
   <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS END =-=-=-=-=-=-= --> 
  
 <?php get_footer(); ?>
