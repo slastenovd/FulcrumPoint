@@ -49,7 +49,7 @@ html, body {
 body {
 	font-family: 'Dosis', 'Open Sans', sans-serif;
 	color: #2f2f2f;
-	font-size: 14px;
+	font-size: 16px;
 	/*line-height: 30px;*/
 	font-weight: 400;
 	overflow-x: hidden;
@@ -2414,6 +2414,7 @@ ul.choose-list li {
 	margin: auto;
 	max-height: 100%;
 	max-width: 100%;
+	height: auto;
 }
 .blog-content-meta {
 	height: auto;

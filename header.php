@@ -35,10 +35,11 @@
     
     <div class="social-icons pull-right">
       <ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
         <li><a href="#"><i class="fa fa-vk"></i></a></li>
         <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://plus.google.com/u/1/115423535375705100331"><i class="fa fa-google-plus"></i></a></li>
       </ul>
     </div>
     <!-- /.social-icons --> 
