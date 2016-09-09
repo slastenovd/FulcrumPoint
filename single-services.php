@@ -19,7 +19,7 @@
   <!-- =-=-=-=-=-=-= PAGE HEADING SECTION END =-=-=-=-=-=-= --> 
 
   <!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
-  <section class="section-padding">
+  <section class="section-padding-40">
             <div class="container">
 
                   <div class="zoom-pic blog-container" align="center">
@@ -52,7 +52,7 @@
                   ?>                                  
 
             </div><!-- /.container -->
-        </section>
+  </section>
   <!-- =-=-=-=-=-=-= PORTFOLIO END =-=-=-=-=-=-= --> 
 
   <!-- =-=-=-=-=-=-= OUR TEAM =-=-=-=-=-=-= -->
