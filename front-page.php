@@ -173,6 +173,7 @@
             <?php 
               $args = array(
                   'post_type' => 'services',
+                  'numberposts' => 10,
               );
               $posts = get_posts($args);
 
@@ -182,17 +183,12 @@
                 <dt> <a class="" href="#"><?php the_title();?></a> </dt>
                 <dd>
                   <p><?php the_excerpt(); ?></p>
-                        
                 </dd>
-
-
 
                <?php
               }
               wp_reset_postdata();
               ?>
-
-
 
             <!-- <dt> <a class="active" href="#">НЕВРОЛОГИЯ</a> </dt> 
              <a href="<?php the_permalink(); ?>">Подробнее</a>-->
