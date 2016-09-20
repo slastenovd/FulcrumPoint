@@ -169,31 +169,34 @@
         <div class="col-md-6 col-md-push-5 col-md-offset-1"> 
           <!-- Accordion -->
           <dl class="accordion">
-            <dt> <a class="active" href="#">Услуги ортопеда</a> </dt>
-            <dd>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc. </p>
-            </dd>
-            <dt> <a class="" href="#">Рефлексотерапия</a> </dt>
-            <dd>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
-            <dt> <a class="" href="#">Услуги невролога</a> </dt>
-            <dd>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
-            </dd>
-            <dt> <a class="" href="#">Гирудотерапия</a> </dt>
-            <dd>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
-            </dd>
-            <dt> <a class="" href="#">Ботулинотерапия</a> </dt>
-            <dd>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
-            </dd>
+
+            <?php 
+              $args = array(
+                  'post_type' => 'services',
+              );
+              $posts = get_posts($args);
+
+              foreach( $posts as $post ){
+                setup_postdata($post);
+              ?>
+                <dt> <a class="" href="#"><?php the_title();?></a> </dt>
+                <dd>
+                  <p><?php the_excerpt(); ?></p>
+                        
+                </dd>
+
+
+
+               <?php
+              }
+              wp_reset_postdata();
+              ?>
+
+
+
+            <!-- <dt> <a class="active" href="#">НЕВРОЛОГИЯ</a> </dt> 
+             <a href="<?php the_permalink(); ?>">Подробнее</a>-->
+     
           </dl>
           <!-- End Accordion --> 
           
