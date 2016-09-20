@@ -3,8 +3,7 @@
       <div class="section-title-left white"> <strong>РАСПИСАНИЕ РАБОТЫ ЦЕНТРА</strong>
         <h1 class="heading bold white">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
         <hr class="white">
-        <p class="white"> Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit.
-          Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit. </p>
+        <p class="white"> Вы можете записаться на прием по телефону или он-лайн заполнив форму </p>
       </div>
       <div class="row">
         <div class="working-area  padding-top-30">
@@ -30,8 +29,8 @@
           </div>
           <!-- End col-md-6 -->
           <div  class="col-md-4">
-            <h3>Пожалуйста запишитесь на прием заранее</h3>
-            <p>Ut fringilla ac metus rhoncus sollicitudin. Curabitur at sagittis justo, eu laoreet lectus. Mauris augue ex, consectetur ac pellentesque ac, feugiat lacinia eros. Ut bibendum mi in imperdiet feugiat. Duis porttitor dapibus odio vitae rutrum. Nullam viverra risus et lacus scelerisque laoreet. </p>
+            <h3>Пожалуйста, запишитесь на прием заранее</h3>
+            <p>  </p>
           </div>
           <!-- End col-md-6 --> 
         </div>

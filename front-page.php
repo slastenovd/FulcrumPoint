@@ -158,10 +158,9 @@
   <section id="about-us" class="padding-top-120">
     <div class="container">
       <div class="section-title"> <strong>УСЛУГИ ЦЕНТРА</strong>
-        <h1 class="heading bold">WHO WE ARE</h1>
+        <h1 class="heading bold">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
         <hr>
-        <p> Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit.
-          Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit. </p>
+        <p> Наш центр предлагает Вам разнообразный спектр медицинских услуг. Проконсультироваться и запиаться на прием Вы моежете позвонив по контактным телефонам или написав заполнив форму записи на прием.</p>
       </div>
       <!-- End title-section -->
       
@@ -177,12 +176,12 @@
               );
               $posts = get_posts($args);
 
-              foreach( $posts as $post ){
+              foreach( $posts as $key => $post ){
                 setup_postdata($post);
               ?>
-                <dt> <a class="" href="#"><?php the_title();?></a> </dt>
+                <dt> <a class="<?php echo ($key == 0)?'active':''; ?>" href="#"><?php the_title();?></a> </dt>
                 <dd>
-                  <p><?php the_excerpt(); ?></p>
+                  <p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
                 </dd>
 
                <?php
@@ -195,13 +194,11 @@
      
           </dl>
           <!-- End Accordion --> 
-          
         </div>
         <!-- end col-md-6 -->
         
         <div class="col-md-5 col-md-pull-7"> <img src="<?php bloginfo("template_url") ?>/images/about-1.jpg"  alt=""> </div>
         <!-- end col-md-5 --> 
-        
       </div>
       <!-- end row --> 
     </div>
@@ -254,9 +251,9 @@ foreach( $posts as $post ){
       <div >
         <div class="container">
           <div class="section-title"> <strong>Наш персонал</strong>
-            <h1 class="heading bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, minima!</h1>
+            <h1 class="heading bold">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
             <hr>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut neque possimus quasi labore, earum quis eaque nisi, totam, voluptatibus maiores nobis ex!  </p>
+            <p>   </p>
           </div>
           <!-- End title-section -->
           <div class="row">
@@ -326,8 +323,7 @@ foreach( $posts as $post ){
       <div class="section-title"> <strong>НОВОСТИ & СТАТЬИ </strong>
         <h1 class="heading bold">СВЕЖИЕ ЗАПИСИ</h1>
         <hr>
-        <p> Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit.
-          Ut consequat velit a metus accumsan, vel tempor nulla blandit. Integer euismod magna vel mi congue suscipit. </p>
+        <p>  </p>
       </div>
 
       
