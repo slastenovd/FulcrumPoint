@@ -155,12 +155,12 @@
 <div id="page-section"> 
   
   <!-- =-=-=-=-=-=-= ABOUT US =-=-=-=-=-=-= -->
-  <section id="about-us" class="padding-top-120">
+  <section id="about-us" class="padding-top-120 padding-bottom-60">
     <div class="container">
       <div class="section-title"> <strong>УСЛУГИ ЦЕНТРА</strong>
         <h1 class="heading bold">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
         <hr>
-        <p> Наш центр предлагает Вам разнообразный спектр медицинских услуг. Проконсультироваться и запиаться на прием Вы моежете позвонив по контактным телефонам или написав заполнив форму записи на прием.</p>
+        <p> Наш центр предлагает Вам разнообразный спектр медицинских услуг. Проконсультироваться и записаться на прием Вы можете позвонив по контактным телефонам или заполнив форму записи на прием.</p>
       </div>
       <!-- End title-section -->
       
@@ -222,6 +222,7 @@
   <!-- =-=-=-=-=-=-= PARALLEX END =-=-=-=-=-=-= -->
 
   <!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
+  <section class="padding-bottom-60  padding-top-60">
 <?php 
 // Get team members with same tags
 $args = array(
@@ -242,6 +243,8 @@ foreach( $posts as $post ){
  }
  wp_reset_postdata();
 ?>
+
+</section>
   <!-- =-=-=-=-=-=-= PORTFOLIO END =-=-=-=-=-=-= --> 
   
  
