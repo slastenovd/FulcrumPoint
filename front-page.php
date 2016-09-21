@@ -222,7 +222,7 @@
   <!-- =-=-=-=-=-=-= PARALLEX END =-=-=-=-=-=-= -->
 
   <!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
-  <section class="padding-bottom-60  padding-top-60">
+  <section class="padding-bottom-60">
 <?php 
 // Get team members with same tags
 $args = array(
