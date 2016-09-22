@@ -2533,7 +2533,7 @@ ul.choose-list li {
 }
 .post-content p {
 	margin-bottom: 30px;
-	text-align: justify;
+	text-align: left;
 }
 .post-content h2 {
 	font-weight: 600;
@@ -2588,6 +2588,7 @@ ul.choose-list li {
 	display: block;
 }
 .meta {
+	line-height: 22px;
 	margin-bottom: 30px;
 	font-size: 14px;
 	text-transform: capitalize;
@@ -3547,7 +3548,7 @@ h3 {
 	font-size: 18px;
 }
 p {
-	font-size: 12px;
+	font-size: 16px;
 }
 .section-padding {
 	padding: 70px 0;
@@ -3773,95 +3774,97 @@ gin-bottom:0;
 }
 }
 @media only screen and (min-width: 768px) {
-.main-menu .navigation > li > ul, .main-menu .navigation > li > ul > li > ul {
-	display: block !important;
-	visibility: hidden;
-	opacity: 0;
-}
-.custom-nav {
-	float: left !important;
+	.main-menu .navigation > li > ul, .main-menu .navigation > li > ul > li > ul {
+		display: block !important;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.custom-nav {
+		float: left !important;
+	}
+
 }
  @media only screen and (max-width: 1023px) {
-.header-area .logo-bar .information-content {
- float: none;
-}
-.main-menu .navigation > li {
- margin-left: 10px;
-}
+	.header-area .logo-bar .information-content {
+	 float: none;
+	}
+	.main-menu .navigation > li {
+	 margin-left: 10px;
+	}
 }
 @media only screen and (max-width: 767px) {
-.header-area .logo-bar .logo, .header-area .logo-bar .information-content {
- width: 100%;
-}
-.header-area .header-lower .search-box {
- display: block;
- right: auto;
- left: 0px;
- z-index: 10;
-}
-.header-area .logo-bar .info-box {
- margin-left: 0px;
- margin-right: 25px;
-}
-.header-area .logo-bar .social-box {
- display: none;
-}
-.header-lower .outer-box {
- padding-right: 0px;
-}
-.main-menu {
- float: none;
- padding-top: 0px;
- z-index: 5;
- padding-bottom: 0px;
-}
-.navigation-2 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
- border-color: #8cbc15;
- margin-top:10px;
-}
-.header-logo, .header-content {
- padding: 26px 15px;
-}
-.header-content .btn {
- display: none;
-}
-#service-thumbnail .owl-controls, #testimonial-single .owl-controls {
- text-align: center;
- margin-top: 0px;
-}
-.navbar-link {
- display: none;
-}
-.navigation .navbar-toggle {
- margin-top: 15px;
-}
-.navigation .navbar-default .navbar-toggle {
- border: 1px solid #8cbc15;
- background-color: #8cbc15;
-}
-.navigation .navbar-default .navbar-toggle .icon-bar {
- background-color: #fff;
-}
-.navigation .navbar-default .navbar-collapse, .navbar-default .navbar-form {
- background-color: #fff;
-}
-.navigation .navbar-header {
- padding-bottom: 20px;
-}
+	.header-area .logo-bar .logo, .header-area .logo-bar .information-content {
+	 width: 100%;
+	}
+	.header-area .header-lower .search-box {
+	 display: block;
+	 right: auto;
+	 left: 0px;
+	 z-index: 10;
+	}
+	.header-area .logo-bar .info-box {
+	 margin-left: 0px;
+	 margin-right: 25px;
+	}
+	.header-area .logo-bar .social-box {
+	 display: none;
+	}
+	.header-lower .outer-box {
+	 padding-right: 0px;
+	}
+	.main-menu {
+	 float: none;
+	 padding-top: 0px;
+	 z-index: 5;
+	 padding-bottom: 0px;
+	}
+	.navigation-2 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	 border-color: #8cbc15;
+	 margin-top:10px;
+	}
+	.header-logo, .header-content {
+	 padding: 26px 15px;
+	}
+	.header-content .btn {
+	 display: none;
+	}
+	#service-thumbnail .owl-controls, #testimonial-single .owl-controls {
+	 text-align: center;
+	 margin-top: 0px;
+	}
+	.navbar-link {
+	 display: none;
+	}
+	.navigation .navbar-toggle {
+	 margin-top: 15px;
+	}
+	.navigation .navbar-default .navbar-toggle {
+	 border: 1px solid #8cbc15;
+	 background-color: #8cbc15;
+	}
+	.navigation .navbar-default .navbar-toggle .icon-bar {
+	 background-color: #fff;
+	}
+	.navigation .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	 background-color: #fff;
+	}
+	.navigation .navbar-header {
+	 padding-bottom: 20px;
+	}
 }
 @media only screen and (max-width: 479px) {
-.top-bar .left-text {
- float: none !important;
- text-align: center;
-}
-.social-icons {
- float: none !important;
- text-align: center;
-}
-.social-icons ul li a {
- border-top: 1px solid #EAEAEA;
- margin-left: -4px;
-}
+	.top-bar .left-text {
+	 float: none !important;
+	 text-align: center;
+	}
+	.social-icons {
+	 float: none !important;
+	 text-align: center;
+	}
+	.social-icons ul li a {
+	 border-top: 1px solid #EAEAEA;
+	 margin-left: -4px;
+	}
 }
 
 .size-banner-tumbnail{
