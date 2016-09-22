@@ -67,7 +67,7 @@
         <div class="info-box">
           <div class="icon"><span class="icon-map"></span></div>
           <div>Комсомольск-на-Амуре</div>
-          <a class="location" href="contacts#about-us"><?php echo get_option('theme_contacttext'); ?></a> </div>
+          <a class="location" href="/contacts#about-us"><?php echo get_option('theme_contacttext'); ?></a> </div>
       </div>
     </div>
   </div>
