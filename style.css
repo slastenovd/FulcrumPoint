@@ -1057,7 +1057,7 @@ p {
 	-o-background-size: cover;
 }
 .quote-bg {
-	background: url("../FulcrumPoint/images/parallex-2.jpg") no-repeat scroll center top;
+	background: url("../FulcrumPoint/images/parallex-2.jpg") repeat scroll center top;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -2582,7 +2582,7 @@ ul.choose-list li {
 	padding: 13px 10px;
 	line-height: 17px;
 	margin-right: 20px;
-}
+}	
 .date {
 	font-size: 24px;
 	display: block;
