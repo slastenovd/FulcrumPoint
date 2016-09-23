@@ -1458,15 +1458,14 @@ ul.services-list li {
   -moz-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
-.team-img-container:hover .team-overlay {
-/*	background-color: rgba(214, 177, 97, 0.8);*/
+/*.team-img-container:hover .team-overlay {
 	background-color: rgba(140, 188, 21, 0.8);
 	transform: translateX(0px);
 	-ms-transform: translateY (0px);
 	-webkit-transform: translateY (0px);
 	-moz-transform: translateY (0px);
 	-o-transform: translateY (0px);
-}
+}*/
 .team-description {
 	background: rgba(0, 0, 0, 0.05) none repeat scroll 0 0;
 	height: auto;
