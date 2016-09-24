@@ -149,11 +149,8 @@
 </section>
 <!-- =-=-=-=-=-=-= HOME SLIDER END =-=-=-=-=-=-= --> 
 
- 
-
 <!-- =-=-=-=-=-=-= PAGE SECTION =-=-=-=-=-=-= -->
 <div id="page-section"> 
-  
   <!-- =-=-=-=-=-=-= ABOUT US =-=-=-=-=-=-= -->
   <section id="about-us" class="padding-top-120 padding-bottom-60">
     <div class="container">
@@ -188,9 +185,6 @@
               }
               wp_reset_postdata();
               ?>
-
-            <!-- <dt> <a class="active" href="#">НЕВРОЛОГИЯ</a> </dt> 
-             <a href="<?php the_permalink(); ?>">Подробнее</a>-->
      
           </dl>
           <!-- End Accordion --> 
@@ -204,30 +198,29 @@
     </div>
     <!-- end container --> 
   </section>
-  <!-- =-=-=-=-=-=-= ABOUT US END =-=-=-=-=-=-= --> 
-    <!-- =-=-=-=-=-=-= PARALLEX =-=-=-=-=-=-= -->
+<!-- =-=-=-=-=-=-= ABOUT US END =-=-=-=-=-=-= --> 
+
+<!-- =-=-=-=-=-=-= PARALLEX =-=-=-=-=-=-= -->
   <section data-stellar-background-ratio="0" class="parallex quote-bg section-padding text-center">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"> <em>ЗАИНТЕРЕСОВАЛИСЬ ?</em>
           <h2>Запишитесь на прием к интересующему Вас специалисту</h2>
           <a class="section-scroll btn btn-lg btn-clean" href="appointment">запись он-лайн</a> </div>
-
         <!-- end col-md-8 --> 
       </div>
       <!-- end row --> 
     </div>
     <!-- end container --> 
   </section>
-  <!-- =-=-=-=-=-=-= PARALLEX END =-=-=-=-=-=-= -->
+<!-- =-=-=-=-=-=-= PARALLEX END =-=-=-=-=-=-= -->
 
-  <!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
+<!-- =-=-=-=-=-=-= PORTFOLIO =-=-=-=-=-=-= -->
   <section class="padding-bottom-60">
 <?php 
 // Get team members with same tags
 $args = array(
     'category_name' => 'photos',
-    // 'post_type' => 'testimonils',
     'posts_per_page'   => 4,
 
 );
@@ -238,134 +231,127 @@ foreach( $posts as $post ){
   the_content( );
 ?>
 
-
 <?php
  }
  wp_reset_postdata();
 ?>
 
 </section>
-  <!-- =-=-=-=-=-=-= PORTFOLIO END =-=-=-=-=-=-= --> 
-  
- 
+<!-- =-=-=-=-=-=-= PORTFOLIO END =-=-=-=-=-=-= --> 
 
 <!-- =-=-=-=-=-=-= OUR TEAM =-=-=-=-=-=-= -->
-    <section class="" id="team">
-      <div >
-        <div class="container">
-          <div class="section-title"> <strong>Наш персонал</strong>
-            <h1 class="heading bold">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
-            <hr>
-            <p>   </p>
-          </div>
-          <!-- End title-section -->
-          <div class="row">
-            <div class="team-members padding-top-30"> 
+<section class="" id="team">
+  <div >
+    <div class="container">
+      <div class="section-title"> <strong>Наш персонал</strong>
+        <h1 class="heading bold">РАБОТАЕМ ЧТОБЫ ВЫ БЫЛИ ЗДОРОВЫ</h1>
+        <hr>
+        <p>   </p>
+      </div>
+      <!-- End title-section -->
+      <div class="row">
+        <div class="team-members padding-top-30"> 
 
-            <?php 
-              // Get team members with same tags
-              $args = array(
-                  // 'category_name' => 'personal',
-                  'post_type' => 'team',
-                  // 'tag' => $stringtags,
-              );
-              $posts = get_posts($args);
+        <?php 
+          // Get team members with same tags
+          $args = array(
+              // 'category_name' => 'personal',
+              'post_type' => 'team',
+          );
+          $posts = get_posts($args);
 
-              foreach( $posts as $post ){
-                setup_postdata($post);
-              ?>
-             
-
-                  <!-- Team-Grid -->
-                  <div class="col-xs-12 col-md-4 col-sm-6 team-grid">
-                    <div class="team-img-container">
-                      <div class="team-overlay"> <a href="#"><i class="fa fa-link"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                      <?php  the_post_thumbnail( 'team-tumbnail', 'img-responsive' );  ?>
-                      <div class="team-overlay-down">
-                        <div class="team-title">
-                          <a href="<?php the_permalink(); ?>">
-                            <h4><?php the_title(); ?></h4>
-                            <p> <?php echo get_post_meta($post->ID, 'Должность', true); ?> </p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-description">
-                        <a href="<?php the_permalink(); ?>">
-                          <p><?php the_excerpt(); ?></p>
-                        </a>
-                    </div>
-                  </div>
-                  <!-- Team-Grid End --> 
-
-               <?php
-              }
-              wp_reset_postdata();
-              ?>
-              
+          foreach( $posts as $post ){
+            setup_postdata($post);
+          ?>
+         
+          <!-- Team-Grid -->
+          <div class="col-xs-12 col-md-4 col-sm-6 team-grid">
+            <div class="team-img-container">
+              <div class="team-overlay"> <a href="#"><i class="fa fa-link"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+              <?php  the_post_thumbnail( 'team-tumbnail', 'img-responsive' );  ?>
+              <div class="team-overlay-down">
+                <div class="team-title">
+                  <a href="<?php the_permalink(); ?>">
+                    <h4><?php the_title(); ?></h4>
+                    <p> <?php echo get_post_meta($post->ID, 'Должность', true); ?> </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="team-description">
+                <a href="<?php the_permalink(); ?>">
+                  <p><?php the_excerpt(); ?></p>
+                </a>
             </div>
           </div>
-          <!-- End team-members --> 
+          <!-- Team-Grid End --> 
+
+           <?php
+          }
+          wp_reset_postdata();
+          ?>
           
         </div>
-        <!-- end container --> 
       </div>
-      <!-- end team-section --> 
-    </section>
-      <!-- =-=-=-=-=-=-= OUR TEAM END =-=-=-=-=-=-= -->
-
-  
-  <!-- =-=-=-=-=-=-= OPENING HOURS SECTION =-=-=-=-=-=-= -->
-<?php require('openinghours.php'); ?>
-  <!-- =-=-=-=-=-=-= OPENING HOURS SECTION  END =-=-=-=-=-=-= --> 
-  
-   <!-- =-=-=-=-=-=-= BLOG & NEWS =-=-=-=-=-=-= -->
-  <section class="section-padding" id="blog">
-    <div class="container">
-
-      <div class="section-title"> <strong>НОВОСТИ & СТАТЬИ </strong>
-        <h1 class="heading bold">СВЕЖИЕ ЗАПИСИ</h1>
-        <hr>
-        <p>  </p>
-      </div>
-
+      <!-- End team-members --> 
       
-      <div class="row">
-        <div class="blog-grid padding-top-30"> 
-
-              <?php 
-              // Get team members with same tags
-              $args = array(
-                  'category_name' => 'articles, news',
-                  // 'post_type' => 'testimonils',
-                  'posts_per_page'   => 4,
-          
-              );
-              $posts = get_posts($args);
-
-              foreach( $posts as $post ){
-                setup_postdata($post);
-              ?>
-
-               <?php require('blog-grid.php');  ?>
-
-
-              <?php
-               }
-               wp_reset_postdata();
-              ?>
-              <div class="clearfix"></div>
-              <div class="align-center  view-more"> <a href="category/news/" class="btn btn-blog btn-default"><i class="fa fa-plus"></i> Перейти к новостям</a> </div>     
-        </div>
-      </div>
-      <!-- End row --> 
     </div>
-  </section>
-  <!-- =-=-=-=-=-=-= BLOG & NEWS  END =-=-=-=-=-=-= -->
+    <!-- end container --> 
+  </div>
+  <!-- end team-section --> 
+</section>
+<!-- =-=-=-=-=-=-= OUR TEAM END =-=-=-=-=-=-= -->
 
+  
+<!-- =-=-=-=-=-=-= OPENING HOURS SECTION =-=-=-=-=-=-= -->
+<?php require('openinghours.php'); ?>
+<!-- =-=-=-=-=-=-= OPENING HOURS SECTION  END =-=-=-=-=-=-= --> 
+  
+<!-- =-=-=-=-=-=-= BLOG & NEWS =-=-=-=-=-=-= -->
+<section class="section-padding" id="blog">
+  <div class="container">
+
+    <div class="section-title"> <strong>НОВОСТИ & СТАТЬИ </strong>
+      <h1 class="heading bold">СВЕЖИЕ ЗАПИСИ</h1>
+      <hr>
+      <p>  </p>
+    </div>
+
+    
+    <div class="row">
+      <div class="blog-grid padding-top-30"> 
+
+            <?php 
+            // Get team members with same tags
+            $args = array(
+                'category_name' => 'articles, news',
+                // 'post_type' => 'testimonils',
+                'posts_per_page'   => 4,
+        
+            );
+            $posts = get_posts($args);
+
+            foreach( $posts as $post ){
+              setup_postdata($post);
+            ?>
+
+            <?php require('blog-grid.php');  ?>
+
+            <?php
+             }
+             wp_reset_postdata();
+            ?>
+            <div class="clearfix"></div>
+            <div class="align-center  view-more"> <a href="category/news/" class="btn btn-blog btn-default"><i class="fa fa-plus"></i> Перейти к новостям</a> </div>     
+      </div>
+    </div>
+    <!-- End row --> 
+  </div>
+</section>
+<!-- =-=-=-=-=-=-= BLOG & NEWS  END =-=-=-=-=-=-= -->
 
 <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS =-=-=-=-=-=-= -->
 <?php require('testimonils.php'); ?>
-  <!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS END =-=-=-=-=-=-= --> 
+<!-- =-=-=-=-=-=-= PARALLEX TESTIMONILS END =-=-=-=-=-=-= --> 
  
 <?php get_footer(); ?>
