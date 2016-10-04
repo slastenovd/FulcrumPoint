@@ -114,7 +114,7 @@
               </li>
               <li> <strong>Телефон :</strong>
                 <p> Ресепшн : <a href="tel:<?php echo get_option('site_telephone'); ?>" title="Телефон"><?php echo get_option('site_telephone'); ?></a> <br />
-                  ФАКС : <a href="<?php echo get_option('site_telephone'); ?>" title="FAX"><?php echo get_option('site_telephone'); ?></a> </p>
+                  ФАКС : <a href="tel:<?php echo get_option('site_telephone'); ?>" title="FAX"><?php echo get_option('site_telephone'); ?></a> </p>
               </li>
               <li> <strong>E-mail :</strong>
                 <p> Запись на прием : <a href="mailto:<?php echo get_option('site_email'); ?>"><?php echo get_option('site_email'); ?></a> <br />
