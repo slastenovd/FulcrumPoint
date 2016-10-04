@@ -23,9 +23,7 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <!-- post -->
 
-      <div class="section-title"> <strong><?php the_title(); ?></strong>
-        <h1 class="heading bold"></h1>
-        <hr>
+      <div class="section-title"> 
         <p> <?php the_content(); ?> </p>
       </div>
 
