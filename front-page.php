@@ -1,12 +1,14 @@
 ﻿<?php get_header(); ?>
 <!-- =-=-=-=-=-=-= HOME SLIDER =-=-=-=-=-=-= -->
 <section class="tt-container">
+<div class="container1">
   <div class="tt-banner">
     <ul>
       <!-- SLIDE  -->
       <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"> 
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/4.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+
+        <img src="<?php bloginfo("template_url") ?>/images/slider/4.jpg"   alt=""  data-bgfit="auto" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft"
                     data-x="50"
@@ -40,7 +42,7 @@
       <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"> 
         
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/1.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/1.jpg"   alt=""  data-bgfit="auto" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft"
@@ -75,7 +77,7 @@
       <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"> 
         
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/2.jpg"   alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/2.jpg"   alt="slidebg1"  data-bgfit="auto" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft"
@@ -114,7 +116,7 @@
                         > 
         
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/3.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/3.jpg"   alt=""  data-bgfit="auto" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft"
@@ -145,6 +147,7 @@
                             data-easing="Power4.easeOut"> <a href="#portfolio" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
       </li>
     </ul>
+  </div>
   </div>
 </section>
 <!-- =-=-=-=-=-=-= HOME SLIDER END =-=-=-=-=-=-= --> 

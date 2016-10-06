@@ -18,7 +18,7 @@
 
 
   <!-- =-=-=-=-=-=-= Contact Us =-=-=-=-=-=-= -->
-  <section id="contact" class="padding-top-120">
+  <section id="contact" class="padding-top-60">
     <div class="container"> 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <!-- post -->
