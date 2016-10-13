@@ -1,6 +1,6 @@
 $(document).ready(function($) {
     "use strict";
-	
+    
     /* ======= Full Screen Background ======= */
 
     $(".full-page").height($(window).height());
@@ -8,8 +8,8 @@ $(document).ready(function($) {
         $(".full-page").height($(window).height());
     });
 
- 	/* ======= Page Scrolling Plugin ======= */
-	
+    /* ======= Page Scrolling Plugin ======= */
+    
     $('a.page-scroll').on('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -22,7 +22,7 @@ $(document).ready(function($) {
 
     $.fn.bootstrapDropdownHover();
 
-	/* ======= Accordions ======= */
+    /* ======= Accordions ======= */
    
     var allPanels = $(".accordion > dd").hide();
     allPanels.first().slideDown("easeOutExpo");
@@ -59,8 +59,8 @@ $(document).ready(function($) {
     startheight: 496,
 
             delay: 10000,
-            // startwidth: 1170,
-            // startheight: 500,
+            startwidth: 1170,
+            startheight: 500,
             onHoverStop: "off",
             hideThumbs: 10,
             hideTimerBar: "on",

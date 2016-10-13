@@ -175,7 +175,6 @@
                   'numberposts' => 10,
               );
               $posts = get_posts($args);
-
               foreach( $posts as $key => $post ){
                 setup_postdata($post);
               ?>
@@ -225,10 +224,8 @@
 $args = array(
     'category_name' => 'photos',
     'posts_per_page'   => 4,
-
 );
 $posts = get_posts($args);
-
 foreach( $posts as $post ){
   setup_postdata($post);
   the_content( );
@@ -262,7 +259,6 @@ foreach( $posts as $post ){
               'post_type' => 'team',
           );
           $posts = get_posts($args);
-
           foreach( $posts as $post ){
             setup_postdata($post);
           ?>
@@ -333,7 +329,6 @@ foreach( $posts as $post ){
         
             );
             $posts = get_posts($args);
-
             foreach( $posts as $post ){
               setup_postdata($post);
             ?>
