@@ -67,10 +67,10 @@
 <!-- Map Settings For Contact Page Only  -->
 <script src="<?php bloginfo("template_url") ?>/js/jquery.form.min.js"></script> 
 <!-- jQuery REVOLUTION Slider  --> 
-<!-- <script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.tools.min.js"></script> 
+<script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.tools.min.js"></script> 
 <script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.revolution.min.js"></script> 
 <script src="<?php bloginfo("template_url") ?>/js/custom.js"></script>
- -->
+
 
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
