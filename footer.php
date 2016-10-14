@@ -60,16 +60,17 @@
 <script src="<?php bloginfo("template_url") ?>/js/jquery.shuffle.min.js"></script> 
 <script src="<?php bloginfo("template_url") ?>/js/magnific-popup/jquery.magnific-popup.min.js"></script> 
 <script type="text/javascript" src="<?php bloginfo("template_url") ?>/js/hover.min.js"></script> 
-<!-- jQuery REVOLUTION Slider  --> 
-<script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.tools.min.js"></script> 
-<script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.revolution.min.js"></script> 
-<script src="<?php bloginfo("template_url") ?>/js/custom.js"></script>
 
 <!-- Map Settings For Contact Page Only  --> 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn1Xgy9UZadmFt3UCALlVN5OnFfOagoqA"></script> 
 <script type="text/javascript" src="<?php bloginfo("template_url") ?>/js/map-settings.js"></script> 
 <!-- Map Settings For Contact Page Only  -->
 <script src="<?php bloginfo("template_url") ?>/js/jquery.form.min.js"></script> 
+<!-- jQuery REVOLUTION Slider  --> 
+<!-- <script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.tools.min.js"></script> 
+<script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="<?php bloginfo("template_url") ?>/js/custom.js"></script>
+ -->
 
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
