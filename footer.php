@@ -49,6 +49,7 @@
 </div>
 <!-- =-=-=-=-=-=-= PAGE SECTION END =-=-=-=-=-=-= --> 
 <!-- =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= --> 
+<script src="<?php bloginfo("template_url") ?>/js/jquery.min.js"></script> 
 <script src="<?php bloginfo("template_url") ?>/js/bootstrap.min.js"></script> 
 <script src="<?php bloginfo("template_url") ?>/js/jquery.smoothscroll.js"></script> 
 <script type="text/javascript"  src="<?php bloginfo("template_url") ?>/js/easing.js"></script> 
@@ -66,10 +67,9 @@
 <!-- Map Settings For Contact Page Only  -->
 <script src="<?php bloginfo("template_url") ?>/js/jquery.form.min.js"></script> 
 <!-- jQuery REVOLUTION Slider  --> 
-<!-- <script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.tools.min.js"></script> 
+<script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.tools.min.js"></script> 
 <script src="<?php bloginfo("template_url") ?>/js/revolution/js/jquery.themepunch.revolution.min.js"></script> 
 <script src="<?php bloginfo("template_url") ?>/js/custom.js"></script>
- -->
 
 
 <!-- BEGIN JIVOSITE CODE {literal} -->

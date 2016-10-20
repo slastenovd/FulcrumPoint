@@ -632,7 +632,7 @@ p {
 .header-area .logo-bar {
 	position: relative;
 	color: #677c91;
-	padding: 20px 0px;
+	padding: 10px 0px;
 }
 .header-area .logo-bar .information-content {
 	position: relative;
@@ -999,13 +999,16 @@ p {
 	color: #8cbc15;
 }
 .btn-bordered.light {
-	color: #8cbc15;
-	border: 1px solid #8cbc15;
+	/*color: #8cbc15;*/
+	/*border: 1px solid #8cbc15;*/
+	border: 1px solid #fff;
+	color: #fff;
+	text-shadow: 2px 2px 4px black;
 }
 .btn-bordered.light:hover {
 	color: #8cbc15;
-	background-color: #fff;
-	border: 1px solid transparent;
+
+	border: 1px solid #8cbc15;
 }
 /*dark btn*/
 .btn-solid.dark {
@@ -1023,6 +1026,11 @@ p {
 	color: #fff;
 	background-color: #202020;
 	border: 1px solid transparent;
+}
+
+.white_color {
+	color: #fff;
+	text-shadow: 1px 1px 2px black;
 }
 /* =-=-=-=-=-=-= All Parallax  =-=-=-=-=-=-= */
 .parallex {
@@ -3959,4 +3967,8 @@ gin-bottom:0;
 
 .side-bar .widget_search  :focus {
 	border: 1px solid #aaa;
+}
+
+.information-content {
+	font-size: 16px;
 }

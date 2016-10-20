@@ -48,27 +48,17 @@ $(document).ready(function($) {
 
 
     /* ======= Revolution slider  ======= */
+
     if ($('.tt-banner').length > 0) {
         jQuery(".tt-banner").revolution({
-
-    sliderLayout: "auto",
-
-    gridwidth:1024,
-    gridheight:496,            
-    startwidth: 1024,
-    startheight: 496,
-
-            delay: 10000,
-            startwidth: 1170,
-            startheight: 500,
+            delay: 6000,
             onHoverStop: "off",
             hideThumbs: 10,
             hideTimerBar: "on",
             navigationType: "none",
             navigationStyle: "preview1",
             fullWidth: "off",
-            fullScreen: "on",
-            fullScreenOffsetContainer: ""
+            fullScreenOffsetContainer: "",
         });
     }
 
