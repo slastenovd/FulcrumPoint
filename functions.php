@@ -64,6 +64,12 @@
 		/* 	Добавляем поле Подзаголовок слайда 4 */
 		$wp_customize->add_setting('slider4_subheader', array('default'=>'','type'=>'option') );
 		$wp_customize->add_control('slider4_subheader', array('type'=>'text', 'label'=>"Подзаголовок слайда 4", 'section'=>'data_slider_section', 'settings'=>'slider4_subheader') );
+		/* 	Добавляем поле Заголовок слайда 5 */
+		$wp_customize->add_setting('slider5_header', array('default'=>'','type'=>'option') );
+		$wp_customize->add_control('slider5_header', array('type'=>'text', 'label'=>"Заголовок слайда 5", 'section'=>'data_slider_section', 'settings'=>'slider5_header') );
+		/* 	Добавляем поле Подзаголовок слайда 5 */
+		$wp_customize->add_setting('slider5_subheader', array('default'=>'','type'=>'option') );
+		$wp_customize->add_control('slider5_subheader', array('type'=>'text', 'label'=>"Подзаголовок слайда 5", 'section'=>'data_slider_section', 'settings'=>'slider5_subheader') );
 	}
 	add_action( 'customize_register', 'mytheme_customize_register' );
 

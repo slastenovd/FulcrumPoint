@@ -60,6 +60,7 @@ $(document).ready(function($) {
             fullWidth: "off",
             fullScreenOffsetContainer: "",
         });
+        jQuery(".tt-banner").show();
     }
 
 

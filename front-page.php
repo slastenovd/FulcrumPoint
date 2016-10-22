@@ -2,7 +2,7 @@
 <!-- =-=-=-=-=-=-= HOME SLIDER =-=-=-=-=-=-= -->
 <section class="tt-container">
 <div class="container">
-  <div class="tt-banner">
+ <div class="tt-banner"  style="display: none" >
     <ul>
       <!-- SLIDE  -->
       <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"> 
@@ -35,7 +35,7 @@
                     data-y="380"
                     data-speed="1000"
                     data-start="1100"
-                    data-easing="Power4.easeOut"> <a href="#portfolio" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
+                    data-easing="Power4.easeOut"> <a href="services/manualnaya-terapiya/" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
       </li>
       
       <!-- SLIDE  -->
@@ -70,7 +70,7 @@
                             data-y="430"
                             data-speed="1000"
                             data-start="1100"
-                            data-easing="Power4.easeOut"> <a href="#portfolio" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
+                            data-easing="Power4.easeOut"> <a href="services/girudoterapiya/" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
       </li>
       
       <!-- SLIDE  -->
@@ -105,7 +105,7 @@
                             data-y="430"
                             data-speed="1000"
                             data-start="1100"
-                            data-easing="Power4.easeOut"> <a href="#portfolio" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
+                            data-easing="Power4.easeOut"> <a href="services/refleksoterapiya/" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
       </li>
       <!-- SLIDE  -->
       <li 
@@ -146,6 +146,45 @@
                             data-start="1100"
                             data-easing="Power4.easeOut"> <a href="#portfolio" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
       </li>
+      <!-- SLIDE  -->
+      <li 
+                        data-transition="fade"
+                        data-slotamount="7"
+                        data-masterspeed="500"
+                        data-saveperformance="on"
+                        > 
+        
+        <!-- MAIN IMAGE --> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/5.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        
+        <!-- LAYER NR. 1 -->
+        <div class="tp-caption tt-slider-title sft white_color"
+                            data-x="20"
+                            data-y="100"
+                            data-speed="1000"
+                            data-start="500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            style="z-index: 1"><?php echo get_option('slider5_header'); ?></div>
+        
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption tt-slider-subtitle sft white_color"
+                            data-x="20"
+                            data-y="300"
+                            data-speed="1000"
+                            data-start="900"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            style="z-index: 2"><?php echo get_option('slider5_subheader'); ?></div>
+        
+        <!-- LAYER NR. 3 -->
+        <div class="tp-caption sft"
+                            data-x="20"
+                            data-y="430"
+                            data-speed="1000"
+                            data-start="1100"
+                            data-easing="Power4.easeOut"> <a href="services/botulinum/" class="tt-btn btn-bordered light page-scroll">подробнее</a> </div>
+      </li>      
     </ul>
   </div>
   </div>
