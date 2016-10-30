@@ -50,7 +50,7 @@
   <div class="logo-bar">
     <div class="container clearfix"> 
       <!-- Logo -->
-      <div class="logo"> <a href="<?php  bloginfo("url") ?>"><img src="<?php bloginfo("template_url") ?>/images/logo.png" alt=""></a> </div>
+      <div class="logo"> <a href="<?php  bloginfo("url") ?>"><img src="<?php bloginfo("template_url") ?>/images/logo.png" alt="Лечебный центр Точка опоры Комсомольск-на-Амуре"></a> </div>
       
       <!--Info Outer-->
       <div class="information-content"> 

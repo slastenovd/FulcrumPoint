@@ -8,7 +8,7 @@
       <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"> 
         <!-- MAIN IMAGE --> 
 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/1.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/1.jpg"   alt="Мануальная терапия в г.Комсомольск-на-Амуре"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft white_color"
                     data-x="10"
@@ -42,7 +42,7 @@
       <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"> 
         
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/2.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/2.jpg"   alt="Гирудотерапия в г.Комсомольск-на-Амуре"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft white_color"
@@ -77,7 +77,7 @@
       <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"> 
         
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/3.jpg"   alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/3.jpg"   alt="Рефлексотерапия в г.Комсомольск-на-Амуре"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft white_color"
@@ -116,7 +116,7 @@
                         > 
         
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/4.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/4.jpg"   alt="Восстановительная физкультура в г.Комсомольск-на-Амуре"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft white_color"
@@ -155,7 +155,7 @@
                         > 
         
         <!-- MAIN IMAGE --> 
-        <img src="<?php bloginfo("template_url") ?>/images/slider/5.jpg"   alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
+        <img src="<?php bloginfo("template_url") ?>/images/slider/5.jpg"   alt="Ботулинотерапия"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"> 
         
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tt-slider-title sft white_color"
@@ -233,7 +233,7 @@
         </div>
         <!-- end col-md-6 -->
         
-        <div class="col-md-5 col-md-pull-7"> <img src="<?php bloginfo("template_url") ?>/images/about-1.jpg"  alt=""> </div>
+        <div class="col-md-5 col-md-pull-7"> <img src="<?php bloginfo("template_url") ?>/images/about-1.jpg"  alt="Медицинский центр"> </div>
         <!-- end col-md-5 --> 
       </div>
       <!-- end row --> 
