@@ -3,6 +3,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="yandex-verification" content="de09da2e61a016ac" />
 <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <![endif]-->
